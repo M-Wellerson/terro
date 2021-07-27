@@ -1,0 +1,137 @@
+#product {
+    background-color: var(--tertiary-color);
+    width: calc(100vw - (100vw - 100%));
+    height: 100vh;
+}
+
+.product-title {
+    font-family: 'Beastly';
+    font-weight: 400;
+    line-height: 100px;
+    font-size: 14.25rem;
+    margin-bottom: 40px;
+}
+
+.product-inner {
+    display: grid;
+    justify-items: left;
+    align-items: center;
+    margin-left: 4.375rem;
+    color: var(--primary-color);
+    width: 90%;
+    height: 100%;
+}
+
+.product-info {
+    display: block;
+}
+
+.vertical-line {
+    display: grid;
+    justify-self: center;
+    border-left: 1px solid var(--primary-color);
+    height: 200px;
+}
+
+.product-inner-info-carac {
+    font-family: 'TTHoves-Regular';
+    font-size: 20px;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+
+.product-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-self: center;
+    justify-items: center;
+}
+
+.product-icons-retencao,
+.product-icons-drenagem,
+.product-icons-aeracao,
+.product-icons-adubacao {
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    background-color: var(--primary-color);
+}
+
+.product-icons-retencao {
+    -webkit-mask-image: url(../icon/retencao.svg);
+    mask-image: url(../icon/retencao.svg);
+}
+
+.product-icons-drenagem {
+    -webkit-mask-image: url(../icon/drenagem.svg);
+    mask-image: url(../icon/drenagem.svg);
+}
+
+.product-icons-aeracao {
+    -webkit-mask-image: url(../icon/aeracao.svg);
+    mask-image: url(../icon/aeracao.svg);
+}
+
+.product-icons-adubacao {
+    -webkit-mask-image: url(../icon/adubacao.svg);
+    mask-image: url(../icon/adubacao.svg);
+}
+
+.product-icons-4-star,
+.product-icons-3-star,
+.product-icons-2-star {
+    width: 76px;
+    height: 12px;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    background-color: var(--primary-color);
+}
+
+.product-icons-4-star {
+    -webkit-mask-image: url(../icon/4-star.svg);
+    mask-image: url(../icon/4-star.svg);
+}
+.product-icons-3-star {
+    -webkit-mask-image: url(../icon/3-star.svg);
+    mask-image: url(../icon/3-star.svg);
+}
+.product-icons-2-star {
+    -webkit-mask-image: url(../icon/2-star.svg);
+    mask-image: url(../icon/2-star.svg);
+}
+
+.product-inner-info-carac div {
+    display: grid;
+    grid-template-columns: 36px 220px 80px;
+    align-items: center;
+}
+
+.product-info-sub-title {
+    display: block;
+    font-family: 'TTHoves-Bold';
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 1000;
+    margin: 24px 0;
+}
+.product-info-title {
+    display: block;
+    font-family: 'TTHoves-Light';
+    font-size: 70px;
+    text-transform: uppercase;
+    margin: 24px 0 0 0;
+}
+
+.product-inner-info {
+    display: grid;
+    grid-template-columns: 1fr 60px 1fr;
+}
+
+.product-inner-info-comp span {
+    display: block;
+    font-family: 'TTHoves-Regular';
+    font-size: 20px;
+    text-transform: uppercase;
+}

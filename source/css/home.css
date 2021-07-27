@@ -1,0 +1,8 @@
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    width: calc(100vw - (100vw - 100%));
+    height: 100vh;
+}

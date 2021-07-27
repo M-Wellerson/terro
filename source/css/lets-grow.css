@@ -1,0 +1,34 @@
+#lets-grow {
+    background-color: var(--purple);
+    width: calc(100vw - (100vw - 100%));
+    height: 100vh;
+}
+
+.lets-grow-inner {
+    margin-left: 4.375rem;
+    width: 650px;
+}
+
+.lets-grow-inner > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.lets-grow-inner > div span:last-child {
+    display: grid;
+    justify-self: right;
+}
+
+#lets-grow span {
+    color: var(--secondary-color);
+}
+
+.title-lets-grow {
+    font-family: 'Beastly';
+    font-size: 18.75rem;
+}
+
+.text-lets-grow {
+    font-family: 'TTHoves-Regular';
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+}

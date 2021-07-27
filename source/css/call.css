@@ -1,0 +1,36 @@
+#call {
+    background-image: url('../image/image-1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: calc(100vw - (100vw - 100%));
+    height: 100vh;
+}
+
+.call-inner {
+    margin-left: 4.375rem;
+    width: 650px;
+}
+
+.call-inner > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.call-inner > div span:last-child {
+    display: grid;
+    justify-self: right;
+}
+
+#call span {
+    color: #fff;
+}
+
+.title-call {
+    font-family: 'Beastly';
+    font-size: 18.75rem;
+}
+
+.text-call {
+    font-family: 'TTHoves-Regular';
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+}
