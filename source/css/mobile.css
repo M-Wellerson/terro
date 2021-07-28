@@ -1,0 +1,40 @@
+@media ( max-width: 600px) {
+    /* [s-] pequeno */
+    #home img {
+        width: 250px;
+    }
+    .title-call, .product-title, .title-lets-grow, .title-contact {
+        font-size: 140px;
+    }
+    .product-info {
+        grid-template-columns: 1fr;
+    }
+    .product-info-inner, .product-inner-info {
+        grid-template-columns: 1fr;
+    }
+    .vertical-line {
+        display: none;
+    }
+    .product-img {
+        width: 215px;
+    }
+    .lets-grow-inner {
+        margin-left: 0;
+        width: 100%;
+        word-wrap:break-word;
+    }
+}
+
+@media ( min-width: 600px) {
+    /* [m-] medio */
+    
+}
+
+@media ( min-width: 992px) {
+    /* [l-] largo */
+    
+}
+
+@media ( min-width: 1200px) {
+    /* [xl-] muito largo */
+}
