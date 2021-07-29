@@ -8,7 +8,6 @@
 .product-title {
     font-family: 'Beastly';
     font-weight: 400;
-    line-height: 100px;
     font-size: 14.25rem;
     margin-bottom: 40px;
     cursor: pointer;
@@ -44,9 +43,17 @@
 
 .product-info {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-self: center;
-    justify-items: center;
+    grid-template-areas: 
+    "title title title produto produto"
+    "subtitle subtitle subtitle produto produto"
+    "info info info produto produto"
+    ;
+    width: 100%;
+    word-wrap: break-word;
+}
+
+.product-img {
+    grid-area: produto;
 }
 
 .product-icons-retencao,
@@ -112,6 +119,7 @@
 }
 
 .product-info-sub-title {
+    grid-area: subtitle;
     display: block;
     font-family: 'TTHoves-Bold';
     font-size: 20px;
@@ -120,16 +128,18 @@
     margin: 24px 0;
 }
 .product-info-title {
+    grid-area: title;
     display: block;
     font-family: 'TTHoves-Light';
     font-size: 70px;
     text-transform: uppercase;
-    margin: 24px 0 0 0;
+    margin: 24px 0 24px 0;
 }
 
 .product-inner-info {
     display: grid;
     grid-template-columns: 1fr 60px 1fr;
+    grid-area: info;
 }
 
 .product-inner-info-comp span {

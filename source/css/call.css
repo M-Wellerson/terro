@@ -8,12 +8,13 @@
 
 .call-inner {
     margin-left: 4.375rem;
-    width: 650px;
+    width: 90%;
 }
 
 .call-inner > div {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-items: left;
 }
 .call-inner > div span:last-child {
     display: grid;

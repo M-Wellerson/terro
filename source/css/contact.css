@@ -5,12 +5,11 @@
 }
 
 .contact-inner {
-    display: grid;
-    align-items: center;
     color: var(--secondary-color);
     width: 90%;
     height: 100%;
     margin-left: 4.375rem;
+    word-wrap: break-word;
 }
 
 .contact-logo-vertical {

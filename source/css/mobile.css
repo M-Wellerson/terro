@@ -4,12 +4,17 @@
         width: 250px;
     }
     .title-call, .product-title, .title-lets-grow, .title-contact {
-        font-size: 140px;
+        font-size: 120px;
     }
     .product-info {
-        grid-template-columns: 1fr;
+        justify-items: center;
+        grid-template-areas: 
+        "title"
+        "produto"
+        "subtitle"
+        "info";
     }
-    .product-info-inner, .product-inner-info {
+    .product-info-inner, .product-inner-info, .contact-media, .call-inner > div {
         grid-template-columns: 1fr;
     }
     .vertical-line {
@@ -18,10 +23,47 @@
     .product-img {
         width: 215px;
     }
-    .lets-grow-inner {
+    .contact-logo-vertical{
+        width: 50%;
+    }
+    .lets-grow-inner, .contact-inner, .call-inner {
         margin-left: 0;
         width: 100%;
-        word-wrap:break-word;
+        word-wrap: break-word;
+    }
+    #product {
+        min-height: 100vh;
+        height: auto;
+    }
+    .product-info-sub-title {
+        border-bottom: 1px solid var(--primary-color);
+    }
+    .product-inner-info-comp-title {
+        border-bottom: 1px solid var(--primary-color);
+        margin-bottom: 24px !important;
+        height: 30px;
+    }
+    .call-inner > div span:last-child {
+        display: grid;
+        justify-self: left;
+    }
+    .product-inner {
+        margin-left: 0;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-items: center;
+    }
+    .product-info-title {
+        display: grid;
+        justify-self: left;
+        font-size: 40px;
+    }
+    .product-inner-info-comp {
+        margin-top: 20px;
+    }
+    .product-inner:hover .product-content:hover .product-info {
+        height: 45em;
     }
 }
 
