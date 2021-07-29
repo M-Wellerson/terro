@@ -1,7 +1,8 @@
 #product {
     background-color: var(--tertiary-color);
     width: calc(100vw - (100vw - 100%));
-    height: 110vh;
+    min-height: 100vh;
+        height: auto;
     transition: background-color 1s ease-out 50ms;
 }
 
