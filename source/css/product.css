@@ -1,4 +1,7 @@
 #product {
+    display: grid;
+    align-content: center;
+    justify-items: center;
     background-color: var(--tertiary-color);
     width: calc(100vw - (100vw - 100%));
     min-height: 100vh;
@@ -9,7 +12,7 @@
 .product-title {
     font-family: 'Beastly';
     font-weight: 400;
-    font-size: 14.25rem;
+    font-size: calc(4.5rem + 10vw);
     margin-bottom: 40px;
     cursor: pointer;
 }
@@ -152,7 +155,7 @@
 }
 
 .product-inner:hover .product-content:hover .product-info {
-    height: 26em;
+    height: 30em;
 }
 
 .product-info,

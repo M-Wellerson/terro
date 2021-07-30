@@ -3,7 +3,7 @@
     .home-img-logo img {
         width: 235px;
     }
-    .title-call, .product-title, .title-lets-grow, .title-contact {
+    .title-call, .title-lets-grow, .title-contact {
         font-size: 120px;
     }
     .product-info {
@@ -46,7 +46,7 @@
     }
     .product-inner {
         margin-left: 0;
-        width: 100%;
+        width: 90%;
         height: 100%;
         align-items: center;
         justify-items: center;
@@ -60,7 +60,7 @@
         margin-top: 20px;
     }
     .product-inner:hover .product-content:hover .product-info {
-        height: 45em;
+        height: 50em;
     }
     #contact {
         display: block;
@@ -96,7 +96,7 @@
 
 @media ( max-width: 600px) {
     /* [m-] medio */
-    .title-call, .product-title, .title-lets-grow, .title-contact {
+    .title-call, .title-lets-grow, .title-contact {
         font-size: 120px;
     }
     
