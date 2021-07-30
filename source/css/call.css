@@ -1,4 +1,7 @@
 #call {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-image: url('../image/image-1.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -7,15 +10,26 @@
 }
 
 .call-inner {
-    margin-left: 4.375rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "solo solo logo buy"
+    "orga pronto . ."
+    "vivo vivo . ."
+    "arrow arrow arrow arrow"
+    ;
     width: 90%;
+    height: 100%;
 }
 
-.call-inner > div {
+.call-img-arrow {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: left;
+    justify-items: center;
+    grid-area: arrow;
 }
+
 .call-inner > div span:last-child {
     display: grid;
     justify-self: right;
@@ -34,4 +48,38 @@
     font-family: 'TTHoves-Regular';
     font-size: 1.25rem;
     line-height: 1.625rem;
+}
+
+.title-call-solo {
+    grid-area: solo;
+}
+.text-call-1 {
+    grid-area: orga;
+}
+.text-call-2 {
+    grid-area: pronto;
+}
+.title-call-vivo {
+    grid-area: vivo;
+}
+.call-logo-vertical {
+    display: grid;
+    justify-self: right;
+    align-self: flex-end;
+    grid-area: logo;
+}
+.call-logo-vertical img {
+    margin-bottom: 10rem;
+    width: 260px;
+    height: 96px;
+    background-color: var(--secondary-color);
+    -webkit-mask-image: url(../icon/logo-vertical.svg);
+    mask-image: url(../icon/logo-vertical.svg);
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+.call-img-buy {
+    display: grid;
+    justify-self: right;
+    grid-area: buy;
 }

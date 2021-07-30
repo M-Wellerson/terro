@@ -1,7 +1,7 @@
 @media ( max-width: 600px) {
     /* [s-] pequeno */
-    #home img {
-        width: 250px;
+    .home-img-logo img {
+        width: 235px;
     }
     .title-call, .product-title, .title-lets-grow, .title-contact {
         font-size: 120px;
@@ -14,7 +14,7 @@
         "subtitle"
         "info";
     }
-    .product-info-inner, .product-inner-info, .contact-media, .call-inner > div {
+    .product-info-inner, .product-inner-info, .contact-media {
         grid-template-columns: 1fr;
     }
     .vertical-line {
@@ -24,11 +24,12 @@
         width: 215px;
     }
     .contact-logo-vertical{
-        width: 50%;
+        width: 233px;
+        height: 86px;
     }
-    .lets-grow-inner, .contact-inner, .call-inner {
+    .lets-grow-inner, .contact-inner {
         margin-left: 0;
-        width: 100%;
+        width: 90%;
         word-wrap: break-word;
     }
     #product {
@@ -42,10 +43,6 @@
         border-bottom: 1px solid var(--primary-color);
         margin-bottom: 24px !important;
         height: 30px;
-    }
-    .call-inner > div span:last-child {
-        display: grid;
-        justify-self: left;
     }
     .product-inner {
         margin-left: 0;
@@ -65,10 +62,43 @@
     .product-inner:hover .product-content:hover .product-info {
         height: 45em;
     }
+    #contact {
+        display: block;
+    }
+    .home-inner {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "logo logo logo"
+        "logo logo logo"
+        "buy arrow ."
+        ;
+    }
+    .home-img-buy {
+        justify-items: center;
+    }
+    .call-inner {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "solo solo solo"
+        "orga orga ."
+        "vivo vivo vivo"
+        "pronto pronto ."
+        "buy arrow ."
+        ;
+    }
+    .call-logo-vertical {
+        display: none;
+    }
+    .call-img-buy {
+        justify-self: center;
+    }
 }
 
-@media ( min-width: 600px) {
+@media ( max-width: 600px) {
     /* [m-] medio */
+    .title-call, .product-title, .title-lets-grow, .title-contact {
+        font-size: 120px;
+    }
     
 }
 
