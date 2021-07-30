@@ -41,7 +41,7 @@
 
 .title-call {
     font-family: 'Beastly';
-    font-size: 18.75rem;
+    font-size: calc(7.5rem + 11vw);
 }
 
 .text-call {
