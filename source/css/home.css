@@ -1,10 +1,14 @@
 #home {
-    display: flex;
+    /* display: grid;
     align-items: center;
     justify-content: center;
-    background-color: var(--primary-color);
+    grid-template-rows: 1fr; */
+    position: fixed;
+    top: 0;
     width: calc(100vw - (100vw - 100%));
-    height: 100vh;
+    height: auto;
+    overflow: hidden;
+    z-index: 100;
 }
 
 .home-inner {
@@ -12,13 +16,15 @@
     align-items: center;
     justify-content: center;
     grid-template-columns: 1fr;
+    background-color: var(--primary-color);
     grid-template-areas: 
     "buy"
     "logo"
     "arrow"
+    "wave"
     ;
-    width: 90%;
-    height: 100%;
+    width: 100%;
+    height: 100vh;
 }
 
 .home-img-buy {
@@ -36,4 +42,18 @@
     display: grid;
     justify-items: center;
     grid-area: arrow;
+}
+
+.anime {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    grid-area: wave;
+}
+
+#Group_7 {
+    width: 100%;
+    display: block;
+    fill: var(--color-content);
 }
