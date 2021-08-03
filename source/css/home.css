@@ -1,8 +1,4 @@
 #home {
-    /* display: grid;
-    align-items: center;
-    justify-content: center;
-    grid-template-rows: 1fr; */
     position: fixed;
     top: 0;
     width: calc(100vw - (100vw - 100%));
@@ -28,7 +24,7 @@
 }
 
 .home-img-buy {
-    width: 100%;
+    width: 90%;
     display: grid;
     justify-items: right;
     grid-area: buy;
@@ -46,10 +42,15 @@
 
 .anime {
     position: relative;
+    margin-top: -70px;
     z-index: 10;
     width: 100%;
     height: 100vh;
     grid-area: wave;
+}
+.anime svg {
+    width: 100%;
+    height: 100%;
 }
 
 #Group_7 {
