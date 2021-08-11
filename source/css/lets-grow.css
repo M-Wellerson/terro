@@ -1,12 +1,14 @@
 #lets-grow {
     background-color: var(--purple);
+    max-width: 100vw;
     width: calc(100vw - (100vw - 100%));
     height: 100vh;
 }
 
 .lets-grow-inner {
     margin-left: 4.375rem;
-    width: 650px;
+    width: 90%;
+    word-wrap: break-word;
 }
 
 .lets-grow-inner > div {
@@ -15,7 +17,7 @@
 }
 .lets-grow-inner > div span:last-child {
     display: grid;
-    justify-self: right;
+    justify-self: left;
 }
 
 #lets-grow span {
@@ -24,7 +26,7 @@
 
 .title-lets-grow {
     font-family: 'Beastly';
-    font-size: 18.75rem;
+    font-size: calc(7.5rem + 11vw);
 }
 
 .text-lets-grow {

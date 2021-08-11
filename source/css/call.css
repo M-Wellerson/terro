@@ -1,7 +1,4 @@
 #call {
-    /* position: absolute;
-    top: 0;
-    left: 0; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,7 +16,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: 
     "solo solo logo buy"
-    "orga pronto . ."
+    "orga pronto pronto ."
     "vivo vivo . ."
     "arrow arrow arrow arrow"
     ;

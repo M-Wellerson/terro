@@ -7,18 +7,19 @@ shape.style.transformOrigin = '50% 0%';
 function animation() {
 	anime({
 		targets: intro,
-		duration: 2100,
+		duration: 3100,
 		easing: 'easeInOutSine',
-		translateY: '-200vh'
+		translateY: '-300vh'
 	});
-	
+
 	anime({
-		targets: 'svg path',
+		targets: '#Group_7 path',
+		strokeDashoffset: [anime.setDashoffset, 0],
 		translateY: [0, 100],
 		delay: function (el, i, l) {
-			return i * 5000
+			return i * 500
 		},
-		easing: 'easeOutCubic',
+		easing: 'easeOutInQuad',
 		duration: 4000
 	});
 }
@@ -29,21 +30,3 @@ const init = () => {
 };
 
 init();
-
-const superDiv = document.querySelector('.product-info-super');
-const auto     = document.querySelector('.product-info-auto');
-const product  = document.querySelector('#product');
-
-superDiv.onmouseover = function () {
-	product.className = 'hovered-green';
-}
-superDiv.onmouseout = function () {
-	product.className = '';
-}
-auto.onmouseover = function () {
-	product.className = 'hovered-auto';
-}
-
-auto.onmouseout = function () {
-	product.className = '';
-}

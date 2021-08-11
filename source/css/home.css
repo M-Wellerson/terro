@@ -19,8 +19,8 @@
     "arrow"
     "wave"
     ;
-    width: 100%;
-    height: 100vh;
+    width: calc(100vw - (100vw - 100%));
+    height: 120vh;
 }
 
 .home-img-buy {
@@ -42,19 +42,15 @@
 
 .anime {
     position: relative;
-    margin-top: -70px;
     z-index: 10;
     width: 100%;
-    height: 100vh;
-    grid-area: wave;
-}
-.anime svg {
-    width: 100%;
     height: 100%;
+    grid-area: wave;
 }
 
 #Group_7 {
     width: 100%;
+    /* height: 100%; */
     display: block;
     fill: var(--color-content);
 }
