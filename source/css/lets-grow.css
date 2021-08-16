@@ -6,21 +6,28 @@
 }
 
 .lets-grow-inner {
+    background-color: var(--purple);
+    max-width: 100vw;
+    width: calc(100vw - (100vw - 100%));
+    height: 100vh;
+}
+
+.lets-grow-inner-containner {
     margin-left: 4.375rem;
     width: 90%;
     word-wrap: break-word;
 }
 
-.lets-grow-inner > div {
+.lets-grow-inner-containner > div {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.lets-grow-inner > div span:last-child {
+.lets-grow-inner-containner > div span:last-child {
     display: grid;
     justify-self: left;
 }
 
-#lets-grow span {
+.lets-grow-inner span {
     color: var(--secondary-color);
 }
 

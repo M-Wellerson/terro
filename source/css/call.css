@@ -1,4 +1,11 @@
 #call {
+    display: block;
+    width: calc(100vw - (100vw - 100%));
+    height: 100vh;
+    z-index: 100;
+}
+
+.call-inner {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -7,9 +14,10 @@
     background-size: cover;
     width: calc(100vw - (100vw - 100%));
     height: 100vh;
+    color: #fff;
 }
 
-.call-inner {
+.call-inner-containner {
     display: grid;
     align-items: center;
     justify-content: center;

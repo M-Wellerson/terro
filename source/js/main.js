@@ -1,32 +1,70 @@
 import anime from './anime-master/lib/anime.es.js';
 const intro = document.querySelector('#home');
+const call = document.querySelector('#call');
 const enter = document.querySelector('.home-img-arrow');
-const shape = document.querySelector('#Group_7 path');
-shape.style.transformOrigin = '50% 0%';
+const wave_1 = document.querySelector('#Group_1 path');
+const wave_2 = document.querySelector('#Group_2 path');
+const wave_3 = document.querySelector('#Group_3 path');
+// shape.style.transformOrigin = '50% 0%';
 
-function animation() {
+function target() {
 	anime({
 		targets: intro,
 		duration: 3100,
-		easing: 'easeInOutSine',
+		easing: 'easeOutQuad',
 		translateY: '-300vh'
 	});
+	call.scrollIntoView()
+}
+
+function animation() {
+	target()
 
 	anime({
-		targets: '#Group_7 path',
-		strokeDashoffset: [anime.setDashoffset, 0],
+		targets: wave_1,
 		translateY: [0, 100],
-		delay: function (el, i, l) {
-			return i * 500
-		},
-		easing: 'easeOutInQuad',
-		duration: 4000
+		easing: 'easeOutQuad',
+		duration: 1100
+	});
+	anime({
+		targets: wave_2,
+		translateY: [0, 100],
+		easing: 'easeOutQuad',
+		duration: 1200
+	});
+	anime({
+		targets: wave_3,
+		translateY: [100, 150],
+		easing: 'easeOutQuad',
+		duration: 1300
 	});
 }
 
 const init = () => {
+	console.log(intro.offsetTop)
 	enter.addEventListener('click', animation);
 	enter.addEventListener('touchenter', animation);
+	document.addEventListener('scroll', function(e) {
+		if( window.scrollY >= 100 ) {
+			target()
+		}
+	});
 };
 
-init();
+// init();
+
+const myFullpage = new fullpage('#fullpage', {
+	anchors: ['section0', 'section1', 'section2', 'section3', 'section4'],
+	navigation: true,
+	navigationTooltips: ['Solo Vivo', 'Produtos', "Let's grooow", 'Contato', 'Contato'],
+	showActiveTooltip: true,
+	// onLeave: function (origin, destination, direction) {
+	// 	let leavingSection = this;
+	// 	if (origin.index == 0 && direction == 'down') {
+	// 		animationUp();
+	// 	}
+	// 	else if (origin.index == 1 && direction == 'up') {
+	// 		animationDown();
+	// 	}
+	// }
+});

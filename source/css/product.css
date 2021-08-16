@@ -9,22 +9,34 @@
     transition: background-color 1s ease-out 50ms;
 }
 
+.product-inner {
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    background-color: var(--tertiary-color);
+    width: calc(100vw - (100vw - 100%));
+    min-height: 100vh;
+        height: 100vh;
+    transition: background-color 1s ease-out 50ms;
+    overflow: hidden;
+}
+
+.product-inner-containner {
+    display: grid;
+    justify-items: left;
+    align-items: center;
+    /* margin-left: 4.375rem; */
+    color: var(--primary-color);
+    width: 90%;
+    height: 100%;
+}
+
 .product-title {
     font-family: 'Beastly';
     font-weight: 400;
     font-size: calc(4.5rem + 10vw);
     margin-bottom: 40px;
     cursor: pointer;
-}
-
-.product-inner {
-    display: grid;
-    justify-items: left;
-    align-items: center;
-    margin-left: 4.375rem;
-    color: var(--primary-color);
-    width: 90%;
-    height: 100%;
 }
 
 .vertical-line {

@@ -27,13 +27,18 @@
         width: 233px;
         height: 86px;
     }
-    .lets-grow-inner, .contact-inner {
+    .lets-grow-inner-containner, .contact-inner-containner {
         margin-left: 0;
         width: 90%;
     }
-    #product {
+    .product-inner-containner {
         min-height: 100vh;
         height: auto;
+        margin-left: 0;
+        width: 90%;
+        height: 100%;
+        align-items: center;
+        justify-items: center;
     }
     .product-info-sub-title {
         border-bottom: 1px solid var(--primary-color);
@@ -42,13 +47,6 @@
         border-bottom: 1px solid var(--primary-color);
         margin-bottom: 24px !important;
         height: 30px;
-    }
-    .product-inner {
-        margin-left: 0;
-        width: 90%;
-        height: 100%;
-        align-items: center;
-        justify-items: center;
     }
     .product-info-title {
         display: grid;
@@ -63,7 +61,7 @@
     .toggle-auto:checked + .lbl-toggle-auto + .product-info {
         max-height: 48em;
     }
-    #contact {
+    .contact-inner {
         display: block;
     }
     .home-inner {
@@ -84,7 +82,7 @@
         margin-left: auto;
         margin-right: auto;
     }
-    .call-inner {
+    .call-inner-containner {
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas: 
         "solo solo solo"
