@@ -24,10 +24,8 @@
 .product-inner-containner {
     display: flex;
     flex-direction: column;
-    /* justify-items: left; */
-    justify-content: space-evenly;
-    align-content: space-around;
-    align-items: center;
+    justify-items: left;
+    align-items: flex-start;
     
     /* margin-left: 4.375rem; */
     color: var(--primary-color);
