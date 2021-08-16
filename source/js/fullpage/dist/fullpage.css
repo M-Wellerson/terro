@@ -140,7 +140,6 @@ html.fp-enabled,
     align-items: center;
     width: 80px;
     height: 80px;
-    margin: 7px;
     position:relative;
 }
 .fp-slidesNav ul li {
@@ -164,19 +163,13 @@ html.fp-enabled,
 .fp-slidesNav ul li:hover a.active span{
     display:block;
     margin:auto;
-
-    background-color: #fff;
+    background-color: #520091 !important;
     -webkit-mask-image: url(../../../icon/sun.svg);
     mask-image: url(../../../icon/sun.svg);
     -webkit-mask-size: cover;
     mask-size: cover;
     height: 32px;
     width: 32px;
-    /* background-image: url('../../../icon/sun.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: -6px 0 0 -6px; */
-    /* border-radius: 100%; */
  }
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
@@ -186,7 +179,7 @@ html.fp-enabled,
     height: 14px;
     width: 14px;
     border: 0;
-    background: #fff;
+    background: #520091;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -196,20 +189,11 @@ html.fp-enabled,
     -o-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
 }
-/* #fp-nav ul li:hover a span,
-.fp-slidesNav ul li:hover a span{
-    width: 10px;
-    height: 10px;
-    margin: -5px 0px 0px -5px;
-} */
-#fp-nav ul li a span, .fp-slidesNav ul li a span {
-    /* top: 0 !important;
-    left: 0 !important; */
-}
+
 #fp-nav ul li .fp-tooltip {
     position: absolute;
     /* top: -2px; */
-    color: #fff;
+    color: #520091;
     font-size: 14px;
     font-family: arial, helvetica, sans-serif;
     white-space: nowrap;
@@ -260,4 +244,20 @@ html.fp-enabled,
 #fp-nav ul li > div {
     writing-mode: tb-rl;
     transform: rotate(-180deg);
+}
+
+#fp-nav ul li a::before {
+    content: '';
+    position :absolute;
+    border-left: 1px solid #520091;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 0;
+    z-index: -1;
+    height: 40%
+}
+
+#fp-nav ul li:first-child a:before{
+    content:none;
 }

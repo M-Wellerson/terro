@@ -56,7 +56,7 @@ const init = () => {
 const myFullpage = new fullpage('#fullpage', {
 	anchors: ['section0', 'section1', 'section2', 'section3', 'section4'],
 	navigation: true,
-	navigationTooltips: ['Solo Vivo', 'Produtos', "Let's grooow", 'Contato', 'Contato'],
+	navigationTooltips: ['Home', 'Solo Vivo', "Produto", "Let's grooow", 'Contato'],
 	showActiveTooltip: true,
 	// onLeave: function (origin, destination, direction) {
 	// 	let leavingSection = this;

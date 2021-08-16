@@ -13,9 +13,24 @@
 }
 
 .lets-grow-inner-containner {
+    display: flex;
+    flex-flow: column;
     margin-left: 4.375rem;
     width: 90%;
     word-wrap: break-word;
+}
+
+.title-lets-grow-1 {
+    order: 1;
+}
+.title-lets-grow-2 {
+    order: 3;
+}
+.text-lets-grow-1 {
+    order: 2;
+}
+.text-lets-grow-2 {
+    order: 2;
 }
 
 .lets-grow-inner-containner > div {

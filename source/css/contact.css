@@ -29,6 +29,7 @@
 .contact-logo-vertical {
     margin-bottom: 10rem;
     margin: 0;
+    margin-bottom: 200px;
     width: 425px;
     height: 156px;
     background-color: var(--secondary-color);
@@ -40,7 +41,7 @@
 
 .title-contact {
     font-family: 'Beastly';
-    font-size: calc(7.5rem + 11vw);
+    font-size: calc(7.5rem + 10vw);
 }
 
 .email-contact {
@@ -52,11 +53,16 @@
 .contact-media {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-left: 40px;
     align-items: center;
     width: 50%;
 }
 
 .contact-social img {
     margin: 0 2rem;
+}
+
+.contact-social {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: left;
 }

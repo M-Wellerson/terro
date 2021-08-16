@@ -26,10 +26,31 @@
     .contact-logo-vertical{
         width: 233px;
         height: 86px;
+        margin-bottom: 50px;
     }
-    .lets-grow-inner-containner, .contact-inner-containner {
+    .lets-grow-inner-containner {
+        display: flex !important;
+        flex-flow: column;
+    }
+    .title-lets-grow-1 {
+        order: 1;
+    }
+    .title-lets-grow-2 {
+        order: 3;
+    }
+    .text-lets-grow-1 {
+        order: 2;
+    }
+    .text-lets-grow-2 {
+        order: 4;
+    }
+    .contact-inner-containner, .lets-grow-inner-containner {
         margin-left: 0;
         width: 90%;
+        display: block;
+        /* margin: 0 auto; */
+        padding-top: 70px;
+        margin-left: 10px;
     }
     .product-inner-containner {
         min-height: 100vh;
@@ -97,6 +118,20 @@
     }
     .call-img-buy {
         justify-self: center;
+    }
+
+    #fp-nav.fp-right {
+        right: -14px !important;
+    }
+    .contact-info {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .contact-social {
+        margin-top: 20px;
+    }
+    .contact-social img {
+        margin: 0;
     }
 }
 
