@@ -9,6 +9,10 @@
     transition: background-color 1s ease-out 50ms;
 } */
 
+body > div:first-child {
+    display: none !important;
+}
+
 .product-inner {
     display: grid;
     align-content: center;
