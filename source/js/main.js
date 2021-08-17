@@ -54,9 +54,12 @@ const init = () => {
 // init();
 
 const myFullpage = new fullpage('#fullpage', {
+	licenseKey: '316235BA-110A4D6D-981DBDD4-FB6D1E6C',
 	anchors: ['section0', 'section1', 'section2', 'section3', 'section4'],
 	navigation: true,
-	navigationTooltips: ['Home', 'Solo Vivo', "Produto", "Let's grooow", 'Contato'],
+	navigationTooltips: ['Solo Vivo', "Produto", "Let's grooow", 'Contato'],
+	scrollHorizontallyKey: '9BD0A298-F44D47ED-A90A3FE7-DDD1FDD2',
+	scrollHorizontally: true,
 	showActiveTooltip: true,
 	// onLeave: function (origin, destination, direction) {
 	// 	let leavingSection = this;

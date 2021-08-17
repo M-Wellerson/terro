@@ -1,4 +1,4 @@
-#product {
+/* #product {
     display: grid;
     align-content: center;
     justify-items: center;
@@ -7,7 +7,7 @@
     min-height: 100vh;
         height: auto;
     transition: background-color 1s ease-out 50ms;
-}
+} */
 
 .product-inner {
     display: grid;
@@ -27,10 +27,13 @@
     justify-items: left;
     align-items: flex-start;
     
-    /* margin-left: 4.375rem; */
     color: var(--primary-color);
     width: 90%;
     height: 100%;
+}
+
+.product-content {
+    flex: 1;
 }
 
 .product-title {
@@ -133,7 +136,7 @@
 
 .product-inner-info-carac div {
     display: grid;
-    grid-template-columns: 36px 220px 80px;
+    grid-template-columns: 13% 1fr 33%;
     align-items: center;
     margin-bottom: 3px;
 }
@@ -194,6 +197,7 @@ input[type='radio'] {
 .toggle-super:checked + .lbl-toggle-super + .product-info,
 .toggle-auto:checked + .lbl-toggle-auto + .product-info {
     max-height: 30em;
+    flex: 3;
 }
 .toggle:checked + .lbl-toggle::before,
 .toggle-super:checked + .lbl-toggle-super::before,
@@ -201,22 +205,22 @@ input[type='radio'] {
     transform: rotate(90deg) translateX(-3px);
 }
 
-.fp-viewing-section0 #fp-nav ul li .fp-tooltip,
-.fp-viewing-section1 #fp-nav ul li .fp-tooltip {
+.fp-viewing-section0-0 #fp-nav ul li .fp-tooltip,
+.fp-viewing-section0-1 #fp-nav ul li .fp-tooltip {
     color: #fff;
 }
 
-.fp-viewing-section0 #fp-nav ul li a::before,
-.fp-viewing-section1 #fp-nav ul li a::before {
+.fp-viewing-section0-0 #fp-nav ul li a::before,
+.fp-viewing-section0-1 #fp-nav ul li a::before {
     border-left: 1px solid #fff;
 }
 
-.fp-viewing-section0 #fp-nav ul li a span,
-.fp-viewing-section1 #fp-nav ul li a span {
+.fp-viewing-section0-0 #fp-nav ul li a span,
+.fp-viewing-section0-1 #fp-nav ul li a span {
     background: #fff;
 }
 
-.fp-viewing-section0 #fp-nav ul li a.active span, .fp-viewing-section0 .fp-slidesNav ul li a.active span, .fp-viewing-section0 #fp-nav ul li:hover a.active span, .fp-viewing-section0 .fp-slidesNav ul li:hover a.active span,
-.fp-viewing-section1 #fp-nav ul li a.active span, .fp-viewing-section1 .fp-slidesNav ul li a.active span, .fp-viewing-section1 #fp-nav ul li:hover a.active span, .fp-viewing-section1 .fp-slidesNav ul li:hover a.active span {
+.fp-viewing-section0-0 #fp-nav ul li a.active span, .fp-viewing-section0-0 .fp-slidesNav ul li a.active span, .fp-viewing-section0-0 #fp-nav ul li:hover a.active span, .fp-viewing-section0-0 .fp-slidesNav ul li:hover a.active span,
+.fp-viewing-section0-1 #fp-nav ul li a.active span, .fp-viewing-section0-1 .fp-slidesNav ul li a.active span, .fp-viewing-section0-1 #fp-nav ul li:hover a.active span, .fp-viewing-section0-1 .fp-slidesNav ul li:hover a.active span {
     background-color: #fff !important;
 }
