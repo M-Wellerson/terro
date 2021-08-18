@@ -58,7 +58,7 @@ const myFullpage = new fullpage('#fullpage', {
 	anchors: ['section0', 'section1', 'section2', 'section3', 'section4'],
 	navigation: true,
 	navigationTooltips: ['Solo Vivo', "Produto", "Let's grooow", 'Contato'],
-	scrollHorizontallyKey: '9BD0A298-F44D47ED-A90A3FE7-DDD1FDD2',
+	scrollHorizontallyKey: 'Z2l0aHViLmlvXzdDZmMyTnliMnhzU0c5eWFYcHZiblJoYkd4NTBJOA==',
 	scrollHorizontally: true,
 	showActiveTooltip: true,
 	// onLeave: function (origin, destination, direction) {
@@ -71,14 +71,3 @@ const myFullpage = new fullpage('#fullpage', {
 	// 	}
 	// }
 });
-
-const div = document.querySelector("div[style*='z-index:']");
-console.log(div);
-setTimeout(function(){ div.parentNode.removeChild(div); }, 10000);
-
-// div.forEach(element => {
-// 	if( element.className == '' ) {
-// 		element.parentNode.removeChild(element);
-// 	}
-	
-// });
