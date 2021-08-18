@@ -51,8 +51,6 @@ const init = () => {
 	});
 };
 
-// init();
-
 const myFullpage = new fullpage('#fullpage', {
 	// licenseKey: '316235BA-110A4D6D-981DBDD4-FB6D1E6C',
 	anchors: ['section0', 'section1', 'section2', 'section3', 'section4'],
@@ -65,7 +63,7 @@ const myFullpage = new fullpage('#fullpage', {
     dropEffect: true,
 	dropEffectOptions: {
         speed: 2300,
-        color: '#362617', 
+        color: ['#362617', '#225439', '#520091', '#EADACA'], 
         zIndex: 9999
     }
 	// onLeave: function (origin, destination, direction) {

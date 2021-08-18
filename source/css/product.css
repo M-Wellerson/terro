@@ -26,7 +26,6 @@
     flex-direction: column;
     justify-items: left;
     align-items: flex-start;
-    
     color: var(--primary-color);
     width: 90%;
     height: 100%;
@@ -225,3 +224,21 @@ input[type='radio'] {
     background-color: #fff !important;
 }
 
+.product-title {
+    position: relative;
+    display: inline-block;
+    color: var(--secondary-color) !important;
+    overflow: hidden;
+    background: linear-gradient(to right, var(--secondary-color), var(--secondary-color) 50%, var(--primary-color) 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+    text-decoration: none;
+    
+}
+.product-title:hover {
+    background-position: 0 100%;
+}
