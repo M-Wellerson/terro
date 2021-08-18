@@ -31,15 +31,11 @@
     height: 100%;
 }
 
-.product-content {
-    flex: 1;
-}
-
 .product-title {
     font-family: 'Beastly';
     font-weight: 400;
-    font-size: calc(4.5rem + 10vw);
-    margin-bottom: 40px;
+    font-size: calc(4.5rem + 7vw);
+    /* margin-bottom: 40px; */
     cursor: pointer;
 }
 
@@ -195,8 +191,7 @@ input[type='radio'] {
 .toggle:checked + .lbl-toggle + .product-info,
 .toggle-super:checked + .lbl-toggle-super + .product-info,
 .toggle-auto:checked + .lbl-toggle-auto + .product-info {
-    max-height: 30em;
-    flex: 3;
+    max-height: 27em;
 }
 .toggle:checked + .lbl-toggle::before,
 .toggle-super:checked + .lbl-toggle-super::before,
