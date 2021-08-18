@@ -71,3 +71,5 @@ const myFullpage = new fullpage('#fullpage', {
 	// 	}
 	// }
 });
+
+console.log(document.querySelectorAll("body > div"));
