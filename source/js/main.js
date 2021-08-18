@@ -74,8 +74,8 @@ const myFullpage = new fullpage('#fullpage', {
 
 const div = document.querySelector("div[style*='z-index:']");
 console.log(div);
-console.log('div');
-div.parentNode.removeChild(div);
+setTimeout(function(){ div.parentNode.removeChild(div); }, 10000);
+
 // div.forEach(element => {
 // 	if( element.className == '' ) {
 // 		element.parentNode.removeChild(element);
