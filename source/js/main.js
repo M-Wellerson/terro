@@ -74,6 +74,9 @@ const myFullpage = new fullpage('#fullpage', {
 
 const div = document.querySelectorAll("body > div");
 div.forEach(element => {
-	console.log(element.className);
+	console.log(element.className == '');
+	if( element.className == '' ) {
+		element.parentNode.removeChild(element);
+	}
 	
 });
