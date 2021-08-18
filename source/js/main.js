@@ -61,6 +61,13 @@ const myFullpage = new fullpage('#fullpage', {
 	scrollHorizontallyKey: 'Z2l0aHViLmlvXzdDZmMyTnliMnhzU0c5eWFYcHZiblJoYkd4NTBJOA==',
 	scrollHorizontally: true,
 	showActiveTooltip: true,
+	dropEffectKey: 'BEFC47E9-EE474903-9373C642-4FDAAACB ',
+    dropEffect: true,
+	dropEffectOptions: {
+        speed: 2300,
+        color: '#362617', 
+        zIndex: 9999
+    }
 	// onLeave: function (origin, destination, direction) {
 	// 	let leavingSection = this;
 	// 	if (origin.index == 0 && direction == 'down') {
