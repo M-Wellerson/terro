@@ -72,4 +72,8 @@ const myFullpage = new fullpage('#fullpage', {
 	// }
 });
 
-console.log(document.querySelectorAll("body > div"));
+const div = document.querySelectorAll("body > div");
+div.forEach(element => {
+	console.log(element.className);
+	
+});
