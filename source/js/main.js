@@ -44,12 +44,33 @@ const init = () => {
 	console.log(intro.offsetTop)
 	enter.addEventListener('click', animation);
 	enter.addEventListener('touchenter', animation);
-	document.addEventListener('scroll', function(e) {
-		if( window.scrollY >= 100 ) {
+	document.addEventListener('scroll', function (e) {
+		if (window.scrollY >= 100) {
 			target()
 		}
 	});
 };
+
+// init();
+
+function shuffle(array) {
+	var currentIndex = array.length, randomIndex;
+
+	// While there remain elements to shuffle...
+	while (currentIndex != 0) {
+
+		// Pick a remaining element...
+		randomIndex = Math.floor(Math.random() * currentIndex);
+		currentIndex--;
+
+		// And swap it with the current element.
+		[array[currentIndex], array[randomIndex]] = [
+			array[randomIndex], array[currentIndex]];
+	}
+
+	return array;
+}
+
 
 const myFullpage = new fullpage('#fullpage', {
 	// licenseKey: '316235BA-110A4D6D-981DBDD4-FB6D1E6C',
@@ -60,12 +81,12 @@ const myFullpage = new fullpage('#fullpage', {
 	scrollHorizontally: true,
 	showActiveTooltip: true,
 	dropEffectKey: 'Z2l0aHViLmlvX2I5RVpISnZjRVZtWm1WamRBPT1icDk=',
-    dropEffect: true,
+	dropEffect: true,
 	dropEffectOptions: {
-        speed: 2300,
-        color: ['#362617', '#225439', '#520091', '#EADACA'], 
-        zIndex: 9999
-    }
+		speed: 2300,
+		color: shuffle(['#362617', '#225439', '#520091', '#EADACA']),
+		zIndex: 9999
+	}
 	// onLeave: function (origin, destination, direction) {
 	// 	let leavingSection = this;
 	// 	if (origin.index == 0 && direction == 'down') {
