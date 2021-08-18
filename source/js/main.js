@@ -72,11 +72,12 @@ const myFullpage = new fullpage('#fullpage', {
 	// }
 });
 
-const div = document.querySelectorAll("body > div");
-div.forEach(element => {
-	console.log(element.className == '');
-	if( element.className == '' ) {
-		element.parentNode.removeChild(element);
-	}
+const div = document.querySelector("div[style*='z-index:']");
+div.parentNode.removeChild(div);
+// console.log(div);
+// div.forEach(element => {
+// 	if( element.className == '' ) {
+// 		element.parentNode.removeChild(element);
+// 	}
 	
-});
+// });
