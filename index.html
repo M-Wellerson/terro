@@ -7,6 +7,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./source/js/fullPage.js-master/dist/fullpage.css">
 	<link rel="stylesheet" href="./source/css/main.css">
+
+	<link rel="stylesheet" href="https://unpkg.com/accordion-js@3.1.1/dist/accordion.min.css">
+
 	<title>Terrô</title>
 </head>
 
@@ -83,102 +86,109 @@
 		<section class="section" id="product section2">
 			<div class="product-inner">
 				<div class="product-inner-containner">
-					<div class="product-content product-info-super">
-						<input id="collapsible-super" class="toggle-super" type="radio" name="radio-product"
-							onclick="collapsiblle('.toggle-super', 'hovered-green', this)">
-						<label for="collapsible-super" class="lbl-toggle-super product-title" tabindex="1">super</label>
-						<div class="product-info">
-							<div class="content-inner-product">
-								<h2 class="product-info-title font-secondary-color">SUPER OIL</h2>
-								<span class="product-info-sub-title font-secondary-color">CULTIVO INDOOR ET HORTA URBANA</span>
-								<div class="product-inner-info">
-									<div class="product-inner-info-carac">
-										<div>
-											<div class="product-icons-retencao background-secondary-color"></div>
-											<span class="font-secondary-color">RETENÇÃO DE AGUA</span>
-											<div class="product-icons-4-star background-secondary-color"></div>
+					<div class="accordion-container">
+						<div class="ac">
+							<h2 class="ac-header">
+								<button class="ac-trigger product-title">super</button>
+							</h2>
+							<div class="ac-panel product-info-super">
+								<div class="content-inner-product">
+									<h2 class="product-info-title font-secondary-color">SUPER OIL</h2>
+									<span class="product-info-sub-title font-secondary-color">CULTIVO INDOOR ET HORTA
+										URBANA</span>
+									<div class="product-inner-info">
+										<div class="product-inner-info-carac">
+											<div>
+												<div class="product-icons-retencao background-secondary-color"></div>
+												<span class="font-secondary-color">RETENÇÃO DE AGUA</span>
+												<div class="product-icons-4-star background-secondary-color"></div>
+											</div>
+											<div>
+												<div class="product-icons-drenagem background-secondary-color"></div>
+												<span class="font-secondary-color">DRENAGEM</span>
+												<div class="product-icons-2-star background-secondary-color"></div>
+											</div>
+											<div>
+												<div class="product-icons-aeracao background-secondary-color"></div>
+												<span class="font-secondary-color">AERAÇÃO</span>
+												<div class="product-icons-3-star background-secondary-color"></div>
+											</div>
+											<div>
+												<div class="product-icons-adubacao background-secondary-color"></div>
+												<span class="font-secondary-color">ADUBAÇÃO</span>
+												<div class="product-icons-4-star background-secondary-color"></div>
+											</div>
 										</div>
-										<div>
-											<div class="product-icons-drenagem background-secondary-color"></div>
-											<span class="font-secondary-color">DRENAGEM</span>
-											<div class="product-icons-2-star background-secondary-color"></div>
-										</div>
-										<div>
-											<div class="product-icons-aeracao background-secondary-color"></div>
-											<span class="font-secondary-color">AERAÇÃO</span>
-											<div class="product-icons-3-star background-secondary-color"></div>
-										</div>
-										<div>
-											<div class="product-icons-adubacao background-secondary-color"></div>
-											<span class="font-secondary-color">ADUBAÇÃO</span>
-											<div class="product-icons-4-star background-secondary-color"></div>
+										<div class="vertical-line vertical-line-secondary-color"></div>
+										<div class="product-inner-info-comp font-secondary-color">
+											<span
+												class="product-inner-info-comp-title"><strong>composição</strong></span>
+											<span>40% <strong>turfa</strong></span>
+											<span>20% <strong>perlita</strong></span>
+											<span>10% <strong>coco</strong></span>
+											<span>30% <strong>humus de esterco</strong></span>
+											<span><strong>+biofertilizantes</strong></span>
 										</div>
 									</div>
-									<div class="vertical-line vertical-line-secondary-color"></div>
-									<div class="product-inner-info-comp font-secondary-color">
-										<span class="product-inner-info-comp-title"><strong>composição</strong></span>
-										<span>40% <strong>turfa</strong></span>
-										<span>20% <strong>perlita</strong></span>
-										<span>10% <strong>coco</strong></span>
-										<span>30% <strong>humus de esterco</strong></span>
-										<span><strong>+biofertilizantes</strong></span>
-									</div>
+									<img class="product-img" src="./source/image/super-detoure.png" alt="Horta">
 								</div>
-								<img class="product-img" src="./source/image/super-detoure.png" alt="Horta">
 							</div>
 						</div>
-					</div>
-					<div class="product-content product-info-auto">
-						<input id="collapsible-auto" class="toggle-auto" type="radio" name="radio-product"
-							onclick="collapsiblle('.toggle-auto', 'hovered-auto', this)">
-						<label for="collapsible-auto" class="lbl-toggle-auto product-title" tabindex="2">auto</label>
-						<div class="product-info product-info-auto-toggle">
-							<div class="content-inner-product">
-								<h2 class="product-info-title font-secondary-color">Floração <br>rápida</h2>
-								<span class="product-info-sub-title font-secondary-color">CULTIVO INDOOR ET URBAN JUNGLE</span>
-								<div class="product-inner-info">
-									<div class="product-inner-info-carac">
-										<div>
-											<div class="product-icons-retencao background-secondary-color"></div>
-											<span class="font-secondary-color">RETENÇÃO DE AGUA</span>
-											<div class="product-icons-3-star background-secondary-color"></div>
+
+						<div class="ac">
+							<h2 class="ac-header">
+								<button class="ac-trigger product-title">auto</button>
+							</h2>
+							<div class="ac-panel product-info-auto">
+								<div class="content-inner-product">
+									<h2 class="product-info-title font-secondary-color">Floração <br>rápida</h2>
+									<span class="product-info-sub-title font-secondary-color">CULTIVO INDOOR ET URBAN
+										JUNGLE</span>
+									<div class="product-inner-info">
+										<div class="product-inner-info-carac">
+											<div>
+												<div class="product-icons-retencao background-secondary-color"></div>
+												<span class="font-secondary-color">RETENÇÃO DE AGUA</span>
+												<div class="product-icons-3-star background-secondary-color"></div>
+											</div>
+											<div>
+												<div class="product-icons-drenagem background-secondary-color"></div>
+												<span class="font-secondary-color">DRENAGEM</span>
+												<div class="product-icons-3-star background-secondary-color"></div>
+											</div>
+											<div>
+												<div class="product-icons-aeracao background-secondary-color"></div>
+												<span class="font-secondary-color">AERAÇÃO</span>
+												<div class="product-icons-4-star background-secondary-color"></div>
+											</div>
+											<div>
+												<div class="product-icons-adubacao background-secondary-color"></div>
+												<span class="font-secondary-color">ADUBAÇÃO</span>
+												<div class="product-icons-3-star background-secondary-color"></div>
+											</div>
 										</div>
-										<div>
-											<div class="product-icons-drenagem background-secondary-color"></div>
-											<span class="font-secondary-color">DRENAGEM</span>
-											<div class="product-icons-3-star background-secondary-color"></div>
-										</div>
-										<div>
-											<div class="product-icons-aeracao background-secondary-color"></div>
-											<span class="font-secondary-color">AERAÇÃO</span>
-											<div class="product-icons-4-star background-secondary-color"></div>
-										</div>
-										<div>
-											<div class="product-icons-adubacao background-secondary-color"></div>
-											<span class="font-secondary-color">ADUBAÇÃO</span>
-											<div class="product-icons-3-star background-secondary-color"></div>
+										<div class="vertical-line vertical-line-secondary-color"></div>
+										<div class="product-inner-info-comp font-secondary-color">
+											<span
+												class="product-inner-info-comp-title"><strong>composição</strong></span>
+											<span>30% <strong>turfa</strong></span>
+											<span>30% <strong>perlita</strong></span>
+											<span>20% <strong>coco</strong></span>
+											<span>30% <strong>humus de esterco</strong></span>
+											<span><strong>+biofertilizantes</strong></span>
 										</div>
 									</div>
-									<div class="vertical-line vertical-line-secondary-color"></div>
-									<div class="product-inner-info-comp font-secondary-color">
-										<span class="product-inner-info-comp-title"><strong>composição</strong></span>
-										<span>30% <strong>turfa</strong></span>
-										<span>30% <strong>perlita</strong></span>
-										<span>20% <strong>coco</strong></span>
-										<span>30% <strong>humus de esterco</strong></span>
-										<span><strong>+biofertilizantes</strong></span>
-									</div>
+									<img class="product-img" src="./source/image/auto-detoure.png" alt="Horta">
 								</div>
-								<img class="product-img" src="./source/image/auto-detoure.png" alt="Horta">
 							</div>
 						</div>
-					</div>
-					<div class="product-content">
-						<input id="collapsible" class="toggle" type="radio" name="radio-product">
-						<label for="collapsible" class="lbl-toggle product-title" tabindex="0">horta</label>
-						<!-- <span class="product-title">horta</span> -->
-						<div class="product-info">
-							<div class="content-inner-product">
+
+						<div class="ac">
+							<h2 class="ac-header">
+								<button class="ac-trigger product-title">horta</button>
+							</h2>
+							<div class="ac-panel product-info-horta">
+								<div class="content-inner-product">
 								<h2 class="product-info-title">4 estações</h2>
 								<span class="product-info-sub-title">HORTA URBANA & URBAN JUNGLE</span>
 								<div class="product-inner-info">
@@ -219,43 +229,67 @@
 						</div>
 					</div>
 				</div>
-			</div>	
-		</section>
-		<section class="section" id="lets-grow section3">
-			<div class="lets-grow-inner">
-				<div class="lets-grow-inner-containner">
-					<span class="title-lets-grow title-lets-grow-1">let's</span>
-					<span class="text-lets-grow text-lets-grow-1">PRONTO PARA USO</span>
-					<span class="text-lets-grow text-lets-grow-2">E SO REGAR COM AGUA!</span>
-					<span class="title-lets-grow title-lets-grow-2">grooow</span>
-				</div>
 			</div>
-		</section>
-		<section class="section" id="contact section4">
-			<div class="contact-inner">
-				<div class="contact-inner-containner">
-					<div class="contact-logo-vertical"></div>
-					<div class="contact-info">
-						<div class="contact-media">
-							<span class="email-contact">contato@terro.agr.br</span>
-							<div class="contact-social">
-								<img src="./source/icon/whatsapp.svg" alt="whatsapp">
-								<img src="./source/icon/facebook.svg" alt="facebook">
-								<img src="./source/icon/instagram.svg" alt="instagram">
-							</div>
+	</div>
+	</section>
+	<section class="section" id="lets-grow section3">
+		<div class="lets-grow-inner">
+			<div class="lets-grow-inner-containner">
+				<span class="title-lets-grow title-lets-grow-1">let's</span>
+				<span class="text-lets-grow text-lets-grow-1">PRONTO PARA USO</span>
+				<span class="text-lets-grow text-lets-grow-2">E SO REGAR COM AGUA!</span>
+				<span class="title-lets-grow title-lets-grow-2">grooow</span>
+			</div>
+		</div>
+	</section>
+	<section class="section" id="contact section4">
+		<div class="contact-inner">
+			<div class="contact-inner-containner">
+				<div class="contact-logo-vertical"></div>
+				<div class="contact-info">
+					<div class="contact-media">
+						<span class="email-contact">contato@terro.agr.br</span>
+						<div class="contact-social">
+							<img src="./source/icon/whatsapp.svg" alt="whatsapp">
+							<img src="./source/icon/facebook.svg" alt="facebook">
+							<img src="./source/icon/instagram.svg" alt="instagram">
 						</div>
-						<span class="title-contact">contato</span>
 					</div>
+					<span class="title-contact">contato</span>
 				</div>
 			</div>
-		</section>
+		</div>
+	</section>
 	</div>
 
-	<script type="text/javascript" src="./source/js/fullPage.js-master/dist/fullpage.scrollHorizontally.min.js"></script>
+	<script type="text/javascript" src="https://unpkg.com/accordion-js@3.1.1/dist/accordion.min.js"></script>
+	<script type="text/javascript"
+		src="./source/js/fullPage.js-master/dist/fullpage.scrollHorizontally.min.js"></script>
 	<script type="text/javascript" src="./source/js/fullPage.js-master/dist/fullpage.dropEffect.min.js"></script>
 	<script type="text/javascript" src="./source/js/fullPage.js-master/dist/fullpage.extensions.min.js"></script>
 	<script src="./source/js/main.js" type="module"></script>
 	<script>
+		new Accordion('.accordion-container');
+
+		// // User options
+		// new Accordion('.container-second', {
+		// 	duration: 400,
+		// 	showMultiple: true,
+		// 	onOpen: function (currentElement) {
+		// 		console.log(currentElement);
+		// 	}
+		// });
+
+		// // Define several accordions with the same options (pass an array with selectors)
+		// new Accordion(['.container-first', '.container-second'], {});
+
+		// // or pass an array with HTMLElements
+		// const accordions = Array.from(document.querySelectorAll('.accordion-container'));
+		// new Accordion(accordions, {});
+
+		// // Detach events
+		// const accordion = new Accordion('.container-first');
+		// accordion.detachEvents();
 		function collapsiblle(className, hoverClassName, checked) {
 			// let product  = document.querySelector('#product');
 			// let superDiv = document.querySelector(className);

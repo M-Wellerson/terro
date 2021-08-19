@@ -15,8 +15,7 @@
     justify-items: center;
     background-color: var(--tertiary-color);
     width: calc(100vw - (100vw - 100%));
-    min-height: 100vh;
-        height: 100vh;
+    max-height: 100%;
     transition: background-color 1s ease-out 50ms;
     overflow: hidden;
 }
@@ -24,19 +23,21 @@
 .product-inner-containner {
     display: flex;
     flex-direction: column;
-    justify-items: left;
     align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
     color: var(--primary-color);
-    width: 90%;
-    height: 100%;
+    width: 80%;
+    /* min-height: 100vh; */
+    overflow: hidden;
 }
 
 .product-title {
-    font-family: 'Beastly';
-    font-weight: 400;
-    font-size: calc(4.5rem + 7vw);
+    font-family: 'Beastly' !important;
+    font-weight: 400 !important;
+    font-size: calc(4.5rem + 7vw) !important;
     /* margin-bottom: 40px; */
-    cursor: pointer;
+    cursor: pointer !important;
 }
 
 .vertical-line {
@@ -57,7 +58,7 @@
     color: var(--primary-color);
 }
 
-.product-info .content-inner-product {
+.content-inner-product {
     display: grid;
     grid-template-areas: 
     "title title title produto produto"
@@ -149,9 +150,9 @@
     grid-area: title;
     display: block;
     font-family: 'TTHoves-Light';
-    font-size: 70px;
+    font-size: 50px;
     text-transform: uppercase;
-    margin: 24px 0 24px 0;
+    margin-block: min(2vh, 1rem);
 }
 
 .product-inner-info {
@@ -185,14 +186,23 @@ input[type='radio'] {
 .product-info {
     max-height: 0px;
     overflow: hidden;
-
     transition: max-height .25s ease-in-out;
 }
 .toggle:checked + .lbl-toggle + .product-info,
 .toggle-super:checked + .lbl-toggle-super + .product-info,
 .toggle-auto:checked + .lbl-toggle-auto + .product-info {
-    max-height: 27em;
+    /* max-height: 27em; */
 }
+
+.ac.is-active .ac-panel {
+    display: flex;
+}
+
+.ac.js-enabled .ac-panel{
+    /* display: none; */
+}
+
+
 .toggle:checked + .lbl-toggle::before,
 .toggle-super:checked + .lbl-toggle-super::before,
 .toggle-auto:checked + .lbl-toggle-auto::before {
@@ -236,4 +246,19 @@ input[type='radio'] {
 }
 .product-title:hover {
     background-position: 0 100%;
+}
+
+.ac {
+    border: none !important;
+    background-color: transparent !important;
+}
+
+.ac .ac-trigger {
+    padding: 0 !important;
+    outline: none !important;
+    line-height: 160px !important;
+}
+
+.ac .js-enabled {
+    outline: none !important;
 }

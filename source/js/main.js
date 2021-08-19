@@ -86,14 +86,15 @@ const myFullpage = new fullpage('#fullpage', {
 		speed: 2300,
 		color: shuffle(['#362617', '#225439', '#520091', '#EADACA']),
 		zIndex: 9999
+	},
+	onLeave: function (origin, destination, direction) {
+		let leavingSection = this;
+		console.log(origin.index, direction)
+		// if (origin.index == 0 && direction == 'down') {
+		// 	animationUp();
+		// }
+		// else if (origin.index == 1 && direction == 'up') {
+		// 	animationDown();
+		// }
 	}
-	// onLeave: function (origin, destination, direction) {
-	// 	let leavingSection = this;
-	// 	if (origin.index == 0 && direction == 'down') {
-	// 		animationUp();
-	// 	}
-	// 	else if (origin.index == 1 && direction == 'up') {
-	// 		animationDown();
-	// 	}
-	// }
 });
