@@ -22,7 +22,7 @@
         display: none;
     }
     .product-img {
-        width: 215px;
+        width: 150px;
     }
     .contact-logo-vertical{
         width: 233px;
@@ -62,13 +62,15 @@
         align-items: center;
         justify-content: space-between;
     }
-    .product-inner-info-carac {
+    .product-inner-info-carac, .product-inner-info-comp span {
         font-size: 16px;
     }
     .product-info-sub-title {
+        font-size: 18px;
         border-bottom: 1px solid var(--primary-color);
     }
     .product-inner-info-comp-title {
+        font-size: 18px;
         border-bottom: 1px solid var(--primary-color);
         margin-bottom: 24px !important;
         height: 30px;
@@ -172,7 +174,7 @@
         font-size: calc(7.5rem + 8vw);
     }
     .product-info-title {
-        font-size: 40px;
+        font-size: 30px;
     }
 }
 
