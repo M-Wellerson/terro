@@ -15,21 +15,6 @@
 
 <body>
 	<div id="fullpage">
-		<!-- <section class="section" id="home section0">
-			<div class="home-inner">
-				<div class="home-img-buy">
-					<img src="./source/icon/buy-now.svg" alt="Compre Agora">
-				</div>
-				<div class="home-img-logo">
-					<img src="./source/icon/logo.svg" alt="Logo">
-				</div>
-				<div class="home-img-arrow">
-					<a href="#call">
-						<img class="home-arrow-down" src="./source/icon/arrow_downward.svg" alt="arrow">
-					</a>
-				</div>
-			</div>
-		</section> -->
 		<section class="section" id="call section1">
 			<div class="slide">
 				<div class="home-inner">
@@ -185,7 +170,8 @@
 
 						<div class="ac">
 							<h2 class="ac-header">
-								<button class="ac-trigger product-title">horta</button>
+								<button onclick="collapsiblle('.is-active .product-info-auto', 'hovered-horta')"
+									class="ac-trigger product-title">horta</button>
 							</h2>
 							<div class="ac-panel product-info-horta">
 								<div class="content-inner-product">
@@ -233,12 +219,24 @@
 			</div>
 		</section>
 		<section class="section" id="lets-grow section3">
-			<div class="lets-grow-inner">
-				<div class="lets-grow-inner-containner">
-					<span class="title-lets-grow title-lets-grow-1">let's</span>
-					<span class="text-lets-grow text-lets-grow-1">PRONTO PARA USO</span>
-					<span class="text-lets-grow text-lets-grow-2">E SO REGAR COM AGUA!</span>
-					<span class="title-lets-grow title-lets-grow-2">grooow</span>
+			<div class="slide">
+				<div class="lets-grow-inner">
+					<div class="lets-grow-inner-containner">
+						<span class="title-lets-grow title-lets-grow-1">let's</span>
+						<span class="text-lets-grow text-lets-grow-1">PRONTO PARA USO</span>
+						<span class="text-lets-grow text-lets-grow-2">E SO REGAR COM AGUA!</span>
+						<span class="title-lets-grow title-lets-grow-2">grooow</span>
+					</div>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="lets-grow-inner-image">
+					<div class="lets-grow-inner-containner">
+						<span class="title-lets-grow title-lets-grow-1 color-white">let's</span>
+						<span class="text-lets-grow text-lets-grow-1 color-white">PRONTO PARA USO</span>
+						<span class="text-lets-grow text-lets-grow-2 color-white">E SO REGAR COM AGUA!</span>
+						<span class="title-lets-grow title-lets-grow-2 color-white">grooow</span>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -250,9 +248,13 @@
 						<div class="contact-media">
 							<span class="email-contact">contato@terro.agr.br</span>
 							<div class="contact-social">
-								<img src="./source/icon/whatsapp.svg" alt="whatsapp">
-								<img src="./source/icon/facebook.svg" alt="facebook">
-								<img src="./source/icon/instagram.svg" alt="instagram">
+								<a href="https://api.whatsapp.com/send?phone=5511963505656">
+									<img src="./source/icon/whatsapp.svg" alt="whatsapp">
+								</a>
+								<!-- <img src="./source/icon/facebook.svg" alt="facebook"> -->
+								<a href="https://www.instagram.com/terro_solovivo">
+									<img src="./source/icon/instagram.svg" alt="instagram">
+								</a>
 							</div>
 						</div>
 						<span class="title-contact">contato</span>
@@ -260,6 +262,8 @@
 				</div>
 			</div>
 		</section>
+
+		<div class="animation-product"></div>
 	</div>
 
 	<script type="text/javascript" src="https://unpkg.com/accordion-js@3.1.1/dist/accordion.min.js"></script>
@@ -269,49 +273,50 @@
 	<script type="text/javascript" src="./source/js/fullPage.js-master/dist/fullpage.extensions.min.js"></script>
 	<script src="./source/js/main.js" type="module"></script>
 	<script>
-		new Accordion('.accordion-container');
+		new Accordion('.accordion-container', {
+			duration: 400,
+			onOpen: function (currentElement) {
+				let ac = document.querySelectorAll('.ac:not(.is-active)');
+				if (ac.length == 3) {
+					ac.forEach(item => {
+						item.classList.remove('display-none-product');
+					});
+				} else {
+					ac.forEach(item => {
+						item.classList.add('display-none-product');
+					});
+				}
+			},
+			onClose: function (currentElement) {
+				let ac = document.querySelectorAll('.ac:not(.is-active)');
+				if (ac.length == 3) {
+					ac.forEach(item => {
+						item.classList.remove('display-none-product');
+					});
+				} else {
+					ac.forEach(item => {
+						item.classList.add('display-none-product');
+					});
+				}
+			}
+		});
 
 		function collapsiblle(className, hoverClassName, idAccordion) {
 			let active = document.querySelector(className);
-			let div    = document.querySelector('.product-inner');
+			let div = document.querySelector('.product-inner');
 			if (!active) {
-				// superDiv.style.display = 'none';
-				// auto.style.display = 'none';
 				div.classList.add(hoverClassName);
 			} else {
-				// superDiv.style.display = 'grid';
-				// auto.style.display = 'grid';
 				div.classList.remove(hoverClassName);
 			}
-
-			let superDiv = document.querySelector('#ac-0');
-			let auto     = document.querySelector('#ac-1');
-			let horta    = document.querySelector('#ac-2');
-
-			// if (!document.querySelector('.product-info-auto').classList.contains('.is-active')) {
-			// 	superDiv.style.display = 'none';
-			// 	horta.style.display    = 'none';
-			// } else {
-			// 	superDiv.style.display  = 'grid';
-			// 	horta.style.display = 'grid';
-			// }
-			console.log(superDiv)
-			if (!superDiv.classList.contains('.js-enabled .is-active')) {
-				auto.style.display = 'none';
-				horta.style.display= 'none';
-			} else {
-				auto.style.display  = 'grid';
-				horta.style.display = 'grid';
-			}
-			// if (!document.querySelector('.product-info-horta').classList.contains('.is-active')) {
-			// 	superDiv.style.display = 'none';
-			// 	auto.style.display    = 'none';
-			// } else {
-			// 	superDiv.style.display  = 'grid';
-			// 	auto.style.display = 'grid';
-			// }
+			document.querySelector('.animation-product').classList.add('animation-product-active');
+				setTimeout( time => {
+					document.querySelector('.animation-product').classList.remove('animation-product-active');
+				}, 1000 );
 		}
 	</script>
 </body>
 
 </html>
+
+<!-- Ao navegar na sessão Rolex de nosso website, você poderá interagir com um site parte de www.rolex.com. Neste caso, os Termos de uso, Política de privacidade e Política de cookies do site www.rolex.com são aplicáveis. -->
