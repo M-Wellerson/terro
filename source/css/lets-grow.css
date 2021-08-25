@@ -22,7 +22,7 @@
 }
 
 .color-white {
-    color: #fff !important;
+    color: var(--tertiary-color) !important;
 }
 
 .lets-grow-inner-containner {

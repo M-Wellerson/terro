@@ -66,3 +66,8 @@
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: left;
 }
+
+.email-contact a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}

@@ -145,6 +145,7 @@
     text-transform: uppercase;
     font-weight: 1000;
     margin: 24px 0;
+    align-self: center;
 }
 .product-inner-info-comp-title {
     display: block;
@@ -159,8 +160,9 @@
     font-family: 'TTHoves-Light';
     font-size: 50px;
     text-transform: uppercase;
-    margin-bottom: 1rem;
-    margin-top: 0;
+    margin-bottom: 0;
+    margin-top: 1rem;
+    align-self: center;
 }
 
 .product-inner-info {
