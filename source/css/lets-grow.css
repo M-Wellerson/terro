@@ -6,6 +6,8 @@
 }
 
 .lets-grow-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     background-color: var(--purple);
     max-width: 100vw;
     width: calc(100vw - (100vw - 100%));
@@ -13,6 +15,8 @@
 }
 
 .lets-grow-inner-image {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     background-image: url(../image/lets-grows.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -29,8 +33,7 @@
     display: flex;
     flex-flow: column;
     margin-left: 4.375rem;
-    width: 80%;
-    word-wrap: break-word;
+    width: 90%;
 }
 
 .title-lets-grow-1 {
@@ -49,6 +52,7 @@
 .lets-grow-inner-containner > div {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    width: 100%;
 }
 .lets-grow-inner-containner > div span:last-child {
     display: grid;
@@ -68,4 +72,18 @@
     font-family: 'TTHoves-Regular';
     font-size: 1.25rem;
     line-height: 1.625rem;
+}
+
+.lets-grow-img-buy {
+    width: 90%;
+    height: 100%;
+}
+
+.lets-grow-img-buy-inner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 100px;
+    margin-top: 5rem;
 }

@@ -23,10 +23,23 @@
 
 .home-img-buy {
     width: 90%;
+    height: 100%;
     display: grid;
-    justify-items: right;
+    justify-self: center;
     grid-area: buy;
 }
+
+.home-img-buy-inner {
+    background-image: url(../icon/buy-now.svg);
+    background-repeat: no-repeat;
+    background-size: 85% 85%;
+    background-position: right;
+    justify-self: right;
+    width: 20%;
+    height: 100%;
+    margin-top: 2rem;
+}
+
 .home-img-logo {
     display: grid;
     justify-items: center;

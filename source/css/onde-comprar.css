@@ -1,0 +1,59 @@
+.onde-comprar-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    max-width: 100vw;
+    width: calc(100vw - (100vw - 100%));
+    padding-bottom: 100px;
+    padding-top: 5rem;
+}
+
+.onde-comprar-inner-containner {
+    color: var(--green);
+    width: 90%;
+    height: 100%;
+}
+
+.onde-comprar-logo-vertical {
+    width: 423px;
+    height: 156px;
+    background-color: var(--green);
+    -webkit-mask-image: url(../icon/logo-vertical.svg);
+    mask-image: url(../icon/logo-vertical.svg);
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+
+.title-onde-comprar {
+    display: block;
+    font-family: 'Beastly';
+    font-size: calc(7.5rem + 10vw);
+    line-height: 250px;
+    margin-bottom: 7rem;
+}
+
+.sub-title-onde-comprar {
+    display: block;
+    font-family: 'Beastly';
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.text-onde-comprar {
+    font-family: 'TTHoves-Regular';
+    font-size: 24px;
+}
+
+.onde-comprar-info-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.text-onde-comprar a {
+    text-decoration: none;
+    color: var(--green);
+}
+.text-onde-comprar a:hover {
+    text-decoration: underline;
+}

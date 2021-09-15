@@ -3,8 +3,11 @@
     .home-img-logo img {
         width: 235px;
     }
-    .title-call, .title-lets-grow, .title-contact {
+    .title-call, .title-contact {
         font-size: 120px;
+    }
+    .title-lets-grow {
+        font-size: 100px;
     }
     .content-inner-product {
         width: 80%;
@@ -32,6 +35,7 @@
     .lets-grow-inner-containner {
         display: flex !important;
         flex-flow: column;
+        word-wrap: break-word;
     }
     .title-lets-grow-1 {
         order: 1;
@@ -164,6 +168,27 @@
         display: block;
         top: 0;
     }
+    .onde-comprar-info-inner {
+        grid-template-columns: 1fr;
+    }
+    .onde-comprar-logo-vertical {
+        width: 141px;
+        height: 52px;
+    }
+    .title-onde-comprar {
+        font-size: 70px;
+        line-height: 70px;
+        margin-bottom: 3rem;
+    }
+    .sub-title-onde-comprar {
+        font-size: 45px;
+    }
+    .text-onde-comprar {
+        font-size: 16px;
+    }
+    .lets-grow-inner-image, .lets-grow-inner  {
+        grid-template-columns: 1fr;        
+    }
 }
 
 @media ( max-width: 600px) {
@@ -176,6 +201,7 @@
             "subtitle"
             "info";
     }
+    
 }
 
 @media ( max-width: 1024px) {
@@ -200,6 +226,17 @@
     }
     .product-info-title {
         font-size: 30px;
+    }
+    .onde-comprar-info-inner {
+        grid-template-columns: 1fr;
+    }
+    .title-onde-comprar {
+        font-size: 100px;
+        line-height: 100px;
+        margin-bottom: 3rem;
+    }
+    .lets-grow-inner-containner{
+        word-wrap: break-word;
     }
 }
 
