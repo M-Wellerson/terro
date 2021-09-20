@@ -22,14 +22,12 @@
     color: var(--secondary-color);
     width: 90%;
     height: 100%;
-    /* margin-left: 4.375rem; */
     word-wrap: break-word;
 }
 
 .contact-logo-vertical {
-    margin-bottom: 10rem;
-    margin: 0;
-    margin-bottom: 200px;
+    display: grid;
+    justify-self: left;
     width: 425px;
     height: 156px;
     background-color: var(--secondary-color);
@@ -70,4 +68,16 @@
 .email-contact a {
     text-decoration: none;
     color: var(--secondary-color);
+}
+
+.contact-inner-containner-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+.contact-inner-containner-header img {
+    display: grid;
+    justify-self: right;
+    margin-right: 2rem;
 }

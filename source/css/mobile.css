@@ -3,11 +3,11 @@
     .home-img-logo img {
         width: 235px;
     }
-    .title-call, .title-contact {
+    .title-call {
         font-size: 120px;
     }
-    .title-lets-grow {
-        font-size: 100px;
+    .title-lets-grow, .title-contact {
+        font-size: 70px !important;
     }
     .content-inner-product {
         width: 80%;
@@ -36,6 +36,16 @@
         display: flex !important;
         flex-flow: column;
         word-wrap: break-word;
+        height: 50%;
+    }
+    .lets-grow-inner-containner > div {
+        grid-template-columns: 1fr 1fr;
+    }
+    .text-lets-grow-1 span {
+        width: 60%;
+    }
+    .text-lets-grow {
+        font-size: 16px;
     }
     .title-lets-grow-1 {
         order: 1;
@@ -49,11 +59,22 @@
     .text-lets-grow-2 {
         order: 4;
     }
+    .lets-grow-img-buy-inner {
+        margin: 0 0 0 1rem;
+        margin-top: -15rem;
+    }
+    .contact-inner-containner-header {
+        grid-template-columns: 1fr;
+    }
+    .contact-inner-containner-header img {
+        position: absolute;
+        top: 30rem;
+        justify-self: left;
+    }
     .contact-inner-containner, .lets-grow-inner-containner {
         margin-left: 0;
         width: 90%;
         display: block;
-        /* margin: 0 auto; */
         padding-top: 70px;
         margin-left: 10px;
     }
@@ -62,7 +83,6 @@
         height: auto;
         margin-left: 0;
         width: 90%;
-        /* height: 100%; */
         align-items: center;
         justify-content: center;
     }
@@ -86,11 +106,6 @@
     }
     .product-inner-info-comp {
         margin-top: 20px;
-    }
-    .toggle:checked + .lbl-toggle + .product-info,
-    .toggle-super:checked + .lbl-toggle-super + .product-info,
-    .toggle-auto:checked + .lbl-toggle-auto + .product-info {
-        /* max-height: 48em; */
     }
     .contact-inner {
         display: block;
@@ -134,8 +149,7 @@
         right: -14px !important;
     }
     .contact-info {
-        display: flex;
-        flex-direction: column-reverse;
+        
     }
     .contact-social {
         margin-top: 20px;

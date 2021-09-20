@@ -37,6 +37,9 @@
 }
 
 .title-lets-grow-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
     order: 1;
 }
 .title-lets-grow-2 {
@@ -45,13 +48,10 @@
 .text-lets-grow-1 {
     order: 2;
 }
-.text-lets-grow-2 {
-    order: 2;
-}
 
 .lets-grow-inner-containner > div {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     width: 100%;
 }
 .lets-grow-inner-containner > div span:last-child {

@@ -45,6 +45,10 @@
     font-size: 24px;
 }
 
+.text-onde-comprar strong {
+    font-family: 'TTHoves-Bold';
+}
+
 .onde-comprar-info-inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
