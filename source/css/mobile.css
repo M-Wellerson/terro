@@ -71,6 +71,13 @@
         top: 30rem;
         justify-self: left;
     }
+    .product-inner-buy-now {
+        display: none;        
+    }
+    .product-img-mobile {
+        width: 200px;
+        margin: 2rem 0;
+    }
     .contact-inner-containner, .lets-grow-inner-containner {
         margin-left: 0;
         width: 90%;

@@ -1,14 +1,3 @@
-/* #product {
-    display: grid;
-    align-content: center;
-    justify-items: center;
-    background-color: var(--tertiary-color);
-    width: calc(100vw - (100vw - 100%));
-    min-height: 100vh;
-        height: auto;
-    transition: background-color 1s ease-out 50ms;
-} */
-
 .product-inner {
     display: grid;
     align-content: center;
@@ -20,6 +9,12 @@
     overflow: hidden;
 }
 
+.product-inner-buy-now {
+    display: grid;
+    justify-self: right;
+    margin-right: 10rem;
+}
+
 .product-inner-containner {
     display: flex;
     flex-direction: column;
@@ -28,7 +23,6 @@
     flex-wrap: wrap;
     color: var(--primary-color);
     width: 80%;
-    /* min-height: 100vh; */
     overflow: hidden;
 }
 
@@ -48,7 +42,7 @@
 }
 
 .vertical-line-secondary-color {
-    border-left: 1px solid var(--secondary-color);
+    border-left: 1px solid var(--secondary-color) !important;
 }
 
 .product-inner-info-carac {
