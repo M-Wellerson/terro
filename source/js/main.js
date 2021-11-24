@@ -16,10 +16,10 @@ const myFullpage = new fullpage('#fullpage', {
 	anchors: ['section0', 'section1', 'section2', 'section3', 'section4'],
 	navigation: true,
 	navigationTooltips: ['Solo Vivo', "Produto", "Let's grooow", 'Contato'],
-	scrollHorizontallyKey: 'Z2l0aHViLmlvXzdDZmMyTnliMnhzU0c5eWFYcHZiblJoYkd4NTBJOA==',
+	scrollHorizontallyKey: 'dGVycm8uYWdyLmJyX1doU2MyTnliMnhzU0c5eWFYcHZiblJoYkd4NTJidA==',
 	scrollHorizontally: true,
 	showActiveTooltip: true,
-	dropEffectKey: 'Z2l0aHViLmlvX2I5RVpISnZjRVZtWm1WamRBPT1icDk=',
+	dropEffectKey: 'dGVycm8uYWdyLmJyX1dwelpISnZjRVZtWm1WamRBPT1PUTQ=',
 	dropEffect: true,
 	dropEffectOptions: {
 		speed: 2300,

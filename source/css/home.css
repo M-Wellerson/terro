@@ -32,7 +32,7 @@
 .home-img-buy-inner {
     background-image: url(../icon/buy-now.svg);
     background-repeat: no-repeat;
-    background-size: 85% 85%;
+    background-size: 100px 100px;
     background-position: right;
     justify-self: right;
     width: 20%;

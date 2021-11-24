@@ -28,8 +28,8 @@
 .title-onde-comprar {
     display: block;
     font-family: 'Beastly';
-    font-size: calc(7.5rem + 10vw);
-    line-height: 250px;
+    font-size: calc(7.5rem + 4vw);
+    line-height: 200px;
     margin-bottom: 7rem;
 }
 

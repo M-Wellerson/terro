@@ -91,4 +91,6 @@
     display: grid;
     justify-self: right;
     grid-area: buy;
+    position: absolute;
+    top: 4rem;
 }

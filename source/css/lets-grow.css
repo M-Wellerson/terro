@@ -34,6 +34,8 @@
     flex-flow: column;
     margin-left: 4.375rem;
     width: 90%;
+    align-items: center;
+    justify-content: center;
 }
 
 .title-lets-grow-1 {
@@ -85,5 +87,7 @@
     margin-right: auto;
     width: 100px;
     height: 100px;
-    margin-top: 5rem;
+    margin-top: 4rem;
+    right: 4rem;
+    position: absolute;
 }
