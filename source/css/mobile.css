@@ -264,3 +264,327 @@
 @media ( min-width: 1200px) {
     /* [xl-] muito largo */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media ( max-width: 600px) {
+    /* [s-] pequeno */
+    .home-img-logo img {
+        width: 235px;
+    }
+    .title-call {
+        font-size: 120px;
+    }
+    .title-lets-grow, .title-contact {
+        font-size: 70px !important;
+    }
+    .content-inner-product {
+        width: 80%;
+        justify-items: center;
+        grid-template-areas: 
+        "title"
+        "produto"
+        "subtitle"
+        "info";
+    }
+    .product-info-inner, .product-inner-info, .contact-media {
+        grid-template-columns: 1fr;
+    }
+    /*.accordion-container .ac-header {*/
+    /*    max-height: 100px !important;*/
+    /*}*/
+    .product-title{
+        font-size: 70px !important;
+    }
+    .vertical-line {
+        display: none;
+    }
+    .product-img {
+        width: 150px;
+    }
+    .contact-logo-vertical{
+        width: 233px;
+        height: 86px;
+        margin-bottom: 50px;
+    }
+    .lets-grow-inner-containner {
+        display: flex !important;
+        flex-flow: column;
+        word-wrap: break-word;
+        height: 50%;
+    }
+    .lets-grow-inner-containner > div {
+        margin: 20px 0 10px 30px;
+        grid-template-columns: 1fr 1fr;
+    }
+    .text-lets-grow-1 span {
+        width: 90%;
+    }
+    .text-lets-grow {
+        font-size: 20px;
+    }
+    .home-img-buy-inner {
+        display: grid;
+        justify-self: center;
+        width: 73px;
+        margin-top: 0;
+    }
+    .call-img-buy img {
+        width: 73px;
+    }
+    .title-lets-grow-1 {
+        order: 1;
+    }
+    .title-lets-grow-2 {
+        order: 3;
+    }
+    .text-lets-grow-1 {
+        order: 2;
+    }
+    .text-lets-grow-2 {
+        order: 4;
+    }
+    .lets-grow-img-buy-inner {
+        width: 73px;
+        margin: 0 0 0 1rem;
+        margin-top: -15rem;
+    }
+    .contact-inner-containner-header {
+        grid-template-columns: 1fr;
+    }
+    .contact-inner-containner-header img {
+        position: absolute;
+        top: 25rem;
+        width: 73px;
+        justify-self: left;
+    }
+    .product-inner-buy-now {
+        display: none;        
+    }
+    .product-img-mobile {
+        width: 200px;
+        margin: 1rem 0;
+    }
+    .contact-inner-containner, .lets-grow-inner-containner {
+        margin-left: 0;
+        width: 90%;
+        display: block;
+        padding-top: 30px;
+        margin-left: 30px;
+    }
+    .product-inner-containner {
+        min-height: 100vh;
+        height: auto;
+        margin-left: 0;
+        width: 90%;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .product-inner-info-carac, .product-inner-info-comp span {
+        font-size: 16px;
+    }
+    .product-info-sub-title {
+        font-size: 18px;
+        border-bottom: 1px solid var(--primary-color);
+    }
+    .product-inner-info-comp-title {
+        font-size: 18px;
+        border-bottom: 1px solid var(--primary-color);
+        margin-bottom: 24px !important;
+        height: 30px;
+    }
+    .product-info-title {
+        display: grid;
+        justify-self: left;
+        font-size: 29px !important;
+    }
+    .product-inner-info-comp {
+        margin-top: 20px;
+    }
+    .contact-inner {
+        display: block;
+    }
+    .home-inner {
+        height: 100vh;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "logo logo logo"
+        "logo logo logo"
+        "buy arrow ."
+        ;
+    }
+    .home-img-buy {
+        width: 100%;
+        justify-items: center;
+    }
+    .home-img-buy img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .call-inner {
+        align-items: flex-start;
+    }
+    .call-inner-containner {
+        height: 80vh;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "solo solo solo"
+        "orga orga ."
+        "vivo vivo vivo"
+        "pronto pronto ."
+        "buy arrow ."
+        ;
+    }
+    .call-logo-vertical {
+        display: none;
+    }
+    .call-img-buy {
+        justify-self: center;
+        margin-top: 8rem;
+    }
+    .call-img-arrow {
+        margin-top: 8rem;
+    }
+
+    #fp-nav.fp-right {
+        right: -14px !important;
+    }
+    .contact-social {
+        margin-top: 20px;
+    }
+    .contact-social img {
+        margin: 0;
+    }
+    /*.ac {*/
+    /*    max-height: 1000px !important;*/
+    /*}*/
+    
+    .display-none-product {
+        overflow: hidden !important;
+        max-height: 0 !important;
+    }
+    .animation-product {
+        display: block;
+        position: fixed;
+        border-radius: 50vw;
+        top: 100vh;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--secondary-color);
+        transition: all .7s ease;
+        z-index: 99999999999999999999999;
+    }
+    
+    .animation-product-active {
+        border-radius: 0;
+        display: block;
+        top: 0;
+    }
+    .onde-comprar-info-inner {
+        grid-template-columns: 1fr;
+    }
+    .onde-comprar-logo-vertical {
+        width: 141px;
+        height: 52px;
+    }
+    .title-onde-comprar {
+        font-size: 70px;
+        line-height: 65px;
+        margin-bottom: 3rem;
+    }
+    .sub-title-onde-comprar {
+        font-size: 45px;
+    }
+    .text-onde-comprar {
+        font-size: 16px;
+    }
+    .lets-grow-inner-image, .lets-grow-inner  {
+        grid-template-columns: 1fr;        
+    }
+}
+
+@media ( max-width: 600px) {
+    /* [m-] medio */
+    .product-info {
+        justify-items: center;
+        grid-template-areas:
+            "title"
+            "produto"
+            "subtitle"
+            "info";
+    }
+    
+}
+
+@media ( max-width: 1024px) {
+    /* [l-] largo */
+    .product-info {
+        justify-items: center;
+        grid-template-areas:
+            "title"
+            "produto"
+            "subtitle"
+            "info";
+    }    
+    .product-inner:hover .product-content:hover .product-info {
+        height: 60em;
+    }
+    .call-logo-vertical img {
+        display: none;
+    }
+
+    .title-contact {
+        font-size: calc(7.5rem + 8vw);
+    }
+    .product-info-title {
+        font-size: 30px;
+    }
+    .onde-comprar-info-inner {
+        grid-template-columns: 1fr;
+    }
+    .title-onde-comprar {
+        
+        margin-bottom: 3rem;
+    }
+    .lets-grow-inner-containner{
+        word-wrap: break-word;
+    }
+}
+
+@media ( min-width: 1200px) {
+    /* [xl-] muito largo */
+}
