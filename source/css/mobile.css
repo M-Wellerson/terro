@@ -267,7 +267,7 @@
         top: 100vh;
         width: 100vw;
         height: 100vh;
-        transition: all .7s ease;
+        transition: all .3s ease;
         z-index: 99999999999999999999999;
     }
 
@@ -304,6 +304,22 @@
     .lets-grow-inner-image, .lets-grow-inner {
         grid-template-columns: 1fr;
     }
+
+    .ac.is-active .ac-header {
+       /* display: none !important; */
+       margin: 0 !important;
+       padding: 0 !important;
+       top: 0 !important;
+       position: absolute;
+    }
+
+    .ac.is-active .ac-header .product-title {
+        margin-top: -100px !important;        
+    }
+    .ac.is-active .ac-panel {
+        padding-top: 30px;        
+    }
+
 }
 
 @media (max-width: 600px) {

@@ -18,6 +18,7 @@
     top: 4rem;
     height: 6.5rem;
     /* margin-right: 10rem; */
+    z-index: 99;
 }
 
 .product-inner-containner {

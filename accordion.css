@@ -12,6 +12,8 @@
   border: 1px solid #eee;
   background-color: #fff;
   box-sizing: border-box;
+  position: relative;
+  z-index: 1;
 }
 
 .ac .ac-header {
@@ -69,11 +71,28 @@
 .ac.js-enabled .ac-panel {
   visibility: hidden;
 }
-
+.ac.is-active {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: #eadaca !important;
+  width: 100%;
+  padding-left: 6rem;
+  padding-top: 6rem;
+  z-index: 9;
+}
 .ac.is-active .ac-panel {
   visibility: visible;
 }
 
 .ac.is-active > .ac-header .ac-trigger::after {
   content: '\2013';
+}
+
+@media ( max-width: 1024px ) {
+  .ac.is-active {
+    padding-left: 2rem;
+    padding-top: 2rem;
+  }
 }
