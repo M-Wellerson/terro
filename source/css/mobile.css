@@ -1,47 +1,59 @@
-@media ( max-width: 600px) {
+@media (max-width: 600px) {
+
     /* [s-] pequeno */
     .home-img-logo img {
         width: 235px;
     }
+
     .title-call {
         font-size: 120px;
     }
+
     .title-lets-grow, .title-contact {
         font-size: 70px !important;
     }
+
     .home-img-arrow {
         align-self: flex-start;
         margin-top: 3rem;
     }
+
     .content-inner-product {
         width: 80%;
         justify-items: center;
-        grid-template-areas: 
-        "title"
-        "produto"
-        "subtitle"
-        "info";
+        grid-template-areas:
+            "title"
+            "produto"
+            "subtitle"
+            "info";
     }
+
     .product-info-inner, .product-inner-info, .contact-media {
         grid-template-columns: 1fr;
     }
+
     .accordion-container .ac-header {
         max-height: 100px !important;
     }
-    .product-title{
+
+    .product-title {
         font-size: 70px !important;
     }
+
     .vertical-line {
         display: none;
     }
+
     .product-img {
         width: 150px;
     }
-    .contact-logo-vertical{
+
+    .contact-logo-vertical {
         width: 233px;
         height: 86px;
         margin-bottom: 50px;
     }
+
     .lets-grow-inner-containner {
         display: flex !important;
         flex-flow: column;
@@ -49,16 +61,20 @@
         height: 50%;
         align-items: flex-start;
     }
-    .lets-grow-inner-containner > div {
+
+    .lets-grow-inner-containner>div {
         /*margin: 20px 0 10px 30px;*/
         grid-template-columns: 1fr 1fr;
     }
+
     .text-lets-grow-1 span {
         width: 90%;
     }
+
     .text-lets-grow {
         font-size: 20px;
     }
+
     .home-img-buy-inner {
         display: grid;
         align-self: flex-start;
@@ -72,21 +88,27 @@
         bottom: 2rem;
         left: 2rem;
     }
+
     .call-img-buy img {
         width: 73px;
     }
+
     .title-lets-grow-1 {
         order: 1;
     }
+
     .title-lets-grow-2 {
         order: 3;
     }
+
     .text-lets-grow-1 {
         order: 2;
     }
+
     .text-lets-grow-2 {
         order: 4;
     }
+
     .lets-grow-img-buy-inner {
         width: 73px;
         /* margin: 0 0 0 1rem; */
@@ -94,24 +116,27 @@
         position: relative;
         margin-left: 6rem;
     }
-    
+
     .contact-inner-containner-header {
         grid-template-columns: 1fr;
     }
+
     .contact-inner-containner-header img {
         position: relative;
         /* top: 32rem;
         width: 73px;
         justify-self: left; */
     }
-    
+
     .product-inner-buy-now {
-        display: none;        
+        display: none;
     }
+
     .product-img-mobile {
         width: 200px;
         margin: 1rem 0;
     }
+
     .contact-inner-containner, .lets-grow-inner-containner {
         margin-left: 0;
         width: 90%;
@@ -119,9 +144,11 @@
         padding-top: 8rem;
         margin-left: 30px;
     }
+
     .contact-inner-containner {
         padding-top: 2rem;
     }
+
     .product-inner-containner {
         margin-top: 8rem;
         height: 100vh;
@@ -130,74 +157,88 @@
         align-items: center;
         justify-content: flex-start;
     }
+
     .product-inner-info-carac, .product-inner-info-comp span {
         font-size: 16px;
     }
+
     .product-info-sub-title {
         font-size: 18px;
         border-bottom: 1px solid var(--primary-color);
     }
+
     .product-inner-info-comp-title {
         font-size: 18px;
         border-bottom: 1px solid var(--primary-color);
         margin-bottom: 24px !important;
         height: 30px;
     }
+
     .product-info-title {
         display: grid;
         justify-self: left;
         font-size: 25px !important;
     }
+
     .product-inner-info-comp {
         margin-top: 20px;
     }
+
     .contact-inner {
         display: block;
         padding-top: 0;
         margin-top: 6rem;
     }
+
     .home-inner {
         height: 100vh;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas: 
-        "logo logo logo"
-        "logo logo logo"
-        "buy arrow ."
+        grid-template-areas:
+            "logo logo logo"
+            "logo logo logo"
+            "buy arrow ."
         ;
     }
+
     .home-img-buy {
         width: 100%;
         justify-items: center;
     }
+
     .home-img-buy img {
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
+
     .call-inner {
         align-items: flex-start;
     }
+
     .call-inner-containner {
         height: 80vh;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-areas: 
-        "solo solo solo"
-        "orga orga ."
-        "vivo vivo vivo"
-        "pronto pronto ."
-        "buy arrow ."
+        grid-template-areas:
+            "solo solo solo"
+            "orga orga ."
+            "vivo vivo vivo"
+            "pronto pronto ."
+            "buy arrow ."
         ;
     }
+
     .call-logo-vertical {
         display: none;
     }
+
     .call-img-buy {
         justify-self: center;
-        margin-top:0;
+        margin-top: 0;
         left: 2rem;
         bottom: 2rem;
         top: auto;
     }
+
     .call-img-arrow {
         margin-top: 8rem;
     }
@@ -205,9 +246,11 @@
     #fp-nav.fp-right {
         right: -14px !important;
     }
+
     .contact-social {
         margin-top: 20px;
     }
+
     .contact-social img {
         margin: 0;
     }
@@ -216,47 +259,55 @@
         overflow: hidden !important;
         max-height: 0 !important;
     }
+
     .animation-product {
         display: block;
         position: fixed;
         border-radius: 50vw;
         top: 100vh;
         width: 100vw;
-        height: 100vh;        
+        height: 100vh;
         transition: all .7s ease;
         z-index: 99999999999999999999999;
     }
-    
+
     .animation-product-active {
         border-radius: 0;
         display: block;
         background-color: var(--secondary-color);
         top: 0;
     }
+
     .onde-comprar-info-inner {
         grid-template-columns: 1fr;
     }
+
     .onde-comprar-logo-vertical {
         width: 141px;
         height: 52px;
     }
+
     .title-onde-comprar {
         font-size: 70px;
         line-height: 65px;
         margin-bottom: 3rem;
     }
+
     .sub-title-onde-comprar {
         font-size: 45px;
     }
+
     .text-onde-comprar {
         font-size: 16px;
     }
-    .lets-grow-inner-image, .lets-grow-inner  {
-        grid-template-columns: 1fr;        
+
+    .lets-grow-inner-image, .lets-grow-inner {
+        grid-template-columns: 1fr;
     }
 }
 
-@media ( max-width: 600px) {
+@media (max-width: 600px) {
+
     /* [m-] medio */
     .product-info {
         justify-items: center;
@@ -266,13 +317,45 @@
             "subtitle"
             "info";
     }
-    
+
 }
 
-@media ( max-width: 1024px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .home-img-buy-inner {
+        background-size: 73px 73px;
+        width: 73px;
+        height: 73px;
+        position: absolute;
+    }
+    .logo-s2 {
+        width: 73px !important;
+        height: 73px !important;
+        display: none;
+    }
+    .ac .ac-trigger {
+        font-size: 180px !important;
+        line-height: 180px !important;
+        min-height: 180px !important;
+    }
+    .lets-grow-img-buy-inner {
+        width: 73px;
+        height: 73px;
+    }
+    .title-lets-grow {
+        font-size: 150px;
+    }
+    .title-contact {
+        font-size: 130px !important;
+    }
+    
+
+}
+
+@media (max-width: 1024px) {
     .hider-movel {
         display: none;
     }
+
     /* [l-] largo */
     .product-info {
         justify-items: center;
@@ -281,10 +364,12 @@
             "produto"
             "subtitle"
             "info";
-    }    
+    }
+
     .product-inner:hover .product-content:hover .product-info {
         height: 60em;
     }
+
     .call-logo-vertical img {
         display: none;
     }
@@ -292,31 +377,37 @@
     .title-contact {
         font-size: calc(7.5rem + 8vw);
     }
+
     .product-info-title {
         font-size: 30px;
     }
+
     .onde-comprar-info-inner {
         grid-template-columns: 1fr;
     }
+
     .title-onde-comprar {
-        
+
         margin-bottom: 3rem;
     }
-    .lets-grow-inner-containner{
+
+    .lets-grow-inner-containner {
         word-wrap: break-word;
     }
+
     .content-inner-product {
         width: 80%;
         justify-items: center;
-        grid-template-areas: 
-        "title"
-        "produto"
-        "subtitle"
-        "info";
+        grid-template-areas:
+            "title"
+            "produto"
+            "subtitle"
+            "info";
     }
 }
 
-@media ( min-width: 1200px) {
+@media (min-width: 1200px) {
+
     /* [xl-] muito largo */
     .hide-lg {
         display: none;
