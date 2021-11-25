@@ -47,6 +47,7 @@
         flex-flow: column;
         word-wrap: break-word;
         height: 50%;
+        align-items: flex-start;
     }
     .lets-grow-inner-containner > div {
         /*margin: 20px 0 10px 30px;*/
@@ -64,7 +65,12 @@
         /*margin-top: 3rem;*/
         justify-self: center;
         width: 73px;
+        height: 73px;
         margin-top: 0;
+        background-size: 73px 73px;
+        position: absolute;
+        bottom: 2rem;
+        left: 2rem;
     }
     .call-img-buy img {
         width: 73px;
@@ -83,18 +89,22 @@
     }
     .lets-grow-img-buy-inner {
         width: 73px;
-        margin: 0 0 0 1rem;
-        margin-top: -10rem;
+        /* margin: 0 0 0 1rem; */
+        margin-top: -7rem;
+        position: relative;
+        margin-left: 6rem;
     }
+    
     .contact-inner-containner-header {
         grid-template-columns: 1fr;
     }
     .contact-inner-containner-header img {
-        position: absolute;
-        top: 32rem;
+        position: relative;
+        /* top: 32rem;
         width: 73px;
-        justify-self: left;
+        justify-self: left; */
     }
+    
     .product-inner-buy-now {
         display: none;        
     }
@@ -108,6 +118,9 @@
         display: block;
         padding-top: 8rem;
         margin-left: 30px;
+    }
+    .contact-inner-containner {
+        padding-top: 2rem;
     }
     .product-inner-containner {
         margin-top: 8rem;
@@ -140,6 +153,8 @@
     }
     .contact-inner {
         display: block;
+        padding-top: 0;
+        margin-top: 6rem;
     }
     .home-inner {
         height: 100vh;
@@ -178,7 +193,10 @@
     }
     .call-img-buy {
         justify-self: center;
-        margin-top: 8rem;
+        margin-top:0;
+        left: 2rem;
+        bottom: 2rem;
+        top: auto;
     }
     .call-img-arrow {
         margin-top: 8rem;
@@ -204,8 +222,7 @@
         border-radius: 50vw;
         top: 100vh;
         width: 100vw;
-        height: 100vh;
-        background-color: var(--secondary-color);
+        height: 100vh;        
         transition: all .7s ease;
         z-index: 99999999999999999999999;
     }
@@ -213,6 +230,7 @@
     .animation-product-active {
         border-radius: 0;
         display: block;
+        background-color: var(--secondary-color);
         top: 0;
     }
     .onde-comprar-info-inner {
@@ -252,6 +270,9 @@
 }
 
 @media ( max-width: 1024px) {
+    .hider-movel {
+        display: none;
+    }
     /* [l-] largo */
     .product-info {
         justify-items: center;
@@ -297,4 +318,7 @@
 
 @media ( min-width: 1200px) {
     /* [xl-] muito largo */
+    .hide-lg {
+        display: none;
+    }
 }
