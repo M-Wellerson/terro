@@ -192,14 +192,13 @@
     }
 
     .home-inner {
-        /* height: 100vh; */
+        height: 100%;
         grid-template-columns: 1fr 1fr 100px;
         grid-template-areas:
             "logo logo logo"
             "logo logo logo"
             "buy arrow ."
         ;
-        height: 90vh;
     }
 
     .home-img-buy {
