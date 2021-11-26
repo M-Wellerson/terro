@@ -2,7 +2,8 @@
 
     /* [s-] pequeno */
     .home-img-logo img {
-        width: 235px;
+        /* width: 235px; */
+        height: 40vh;
     }
 
     .title-call {
@@ -191,13 +192,14 @@
     }
 
     .home-inner {
-        height: 100vh;
-        grid-template-columns: 1fr 1fr 1fr;
+        /* height: 100vh; */
+        grid-template-columns: 1fr 1fr 100px;
         grid-template-areas:
             "logo logo logo"
             "logo logo logo"
             "buy arrow ."
         ;
+        height: 90vh;
     }
 
     .home-img-buy {
@@ -428,4 +430,8 @@
     .hide-lg {
         display: none;
     }
+}
+
+section {
+    max-height: 100vh;
 }
