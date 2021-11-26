@@ -28,6 +28,9 @@
             "subtitle"
             "info";
     }
+    .product-inner {
+        height: 100%;
+    }
 
     .product-info-inner, .product-inner-info, .contact-media {
         grid-template-columns: 1fr;
@@ -152,7 +155,7 @@
 
     .product-inner-containner {
         margin-top: 8rem;
-        height: 100vh;
+        height: 100% !important;
         margin-left: 0;
         width: 90%;
         align-items: center;
@@ -188,7 +191,8 @@
     .contact-inner {
         display: block;
         padding-top: 0;
-        margin-top: 6rem;
+        /* margin-top: 6rem; */
+        height: 100%;
     }
 
     .home-inner {
@@ -214,6 +218,7 @@
 
     .call-inner {
         align-items: flex-start;
+        height: 100%;
     }
 
     .call-inner-containner {
@@ -304,6 +309,7 @@
 
     .lets-grow-inner-image, .lets-grow-inner {
         grid-template-columns: 1fr;
+        height: 100%;
     }
 
     .ac.is-active .ac-header {

@@ -27,4 +27,3 @@ const myFullpage = new fullpage('#fullpage', {
 		zIndex: 9999
 	}
 });
-
