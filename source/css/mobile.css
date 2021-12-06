@@ -16,7 +16,7 @@
 
     .home-img-arrow {
         align-self: flex-start;
-        margin-top: 3rem;
+        margin-top: 2rem;
     }
 
     .content-inner-product {
@@ -89,7 +89,7 @@
         margin-top: 0;
         background-size: 73px 73px;
         position: absolute;
-        bottom: 2rem;
+        bottom: auto;
         left: 2rem;
     }
 
@@ -197,7 +197,7 @@
 
     .home-inner {
         height: 100%;
-        grid-template-columns: 1fr 1fr 100px;
+        grid-template-columns: 1fr 1fr 125px;
         grid-template-areas:
             "logo logo logo"
             "logo logo logo"
@@ -241,8 +241,8 @@
         justify-self: center;
         margin-top: 0;
         left: 2rem;
-        bottom: 2rem;
         top: auto;
+        bottom: 4rem;
     }
 
     .call-img-arrow {
@@ -273,8 +273,9 @@
         top: 100vh;
         width: 100vw;
         height: 100vh;
-        transition: all .3s ease;
-        z-index: 99999999999999999999999;
+        transition: all .4s ease;
+        z-index: -1;
+        background-color: var(--secondary-color);
     }
 
     .animation-product-active {
@@ -282,6 +283,7 @@
         display: block;
         background-color: var(--secondary-color);
         top: 0;
+        z-index: 99999999999999999999999;
     }
 
     .onde-comprar-info-inner {

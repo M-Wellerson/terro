@@ -76,165 +76,178 @@
 						<img src="./source/icon/buy-now-background-roxo.svg" class="logo-s2" width="100" height="100" alt="Logo">
 					</a>
 				</div>
-				<div class="product-inner-containner">
-					<div class="accordion-container">
-						<div class="ac">
-							<h2 class="ac-header">
-								<button onclick="collapsiblle('.is-active .product-info-super', 'hovered-green')"
-									class="ac-trigger product-title">super</button>
-							</h2>
-							<div class="ac-panel product-info-super">
-								<div class="content-inner-product">
-									<h2 class="product-info-title font-secondary-color">SUPER OIL</h2>
-									<span class="product-info-sub-title font-secondary-color">CULTIVO INDOOR ET HORTA
-										URBANA</span>
-									<div class="product-inner-info">
-										<div class="product-inner-info-carac">
-											<div>
-												<div class="product-icons-retencao background-secondary-color"></div>
-												<span class="font-secondary-color">RETENÇÃO DE AGUA</span>
-												<div class="product-icons-4-star background-secondary-color"></div>
-											</div>
-											<div>
-												<div class="product-icons-drenagem background-secondary-color"></div>
-												<span class="font-secondary-color">DRENAGEM</span>
-												<div class="product-icons-2-star background-secondary-color"></div>
-											</div>
-											<div>
-												<div class="product-icons-aeracao background-secondary-color"></div>
-												<span class="font-secondary-color">AERAÇÃO</span>
-												<div class="product-icons-3-star background-secondary-color"></div>
-											</div>
-											<div>
-												<div class="product-icons-adubacao background-secondary-color"></div>
-												<span class="font-secondary-color">ADUBAÇÃO</span>
-												<div class="product-icons-4-star background-secondary-color"></div>
-											</div>
-										</div>
-										<div class="vertical-line vertical-line-secondary-color"></div>
-										<div class="product-inner-info-comp font-secondary-color">
-											<span class="product-inner-info-comp-title">composição</span>
-											<span>40% <strong>turfa</strong></span>
-											<span>20% <strong>perlita</strong></span>
-											<span>10% <strong>coco</strong></span>
-											<span>30% <strong>humus de esterco</strong></span>
-											<span><strong>+biofertilizantes</strong></span>
-										</div>
-									</div>
-									<picture class="product-img">
-										<source srcset="./source/image/super-detoure.png" media="(min-width: 800px)">
-										<img class="product-img-mobile" src="./source/image/super-mobile.png"
-											alt="Horta">
-									</picture>
-								</div>
-							</div>
-						</div>
+				
+				<div class="produto-menu">
+					<div>
+						<span class="product-new-title" onclick="go_product(1)">super</span>
+						<span class="product-new-title" onclick="go_product(2)">auto</span>
+						<span class="product-new-title" onclick="go_product(3)">horta</span>
+					</div>
+				</div>
 
-						<div class="ac">
-							<h2 class="ac-header">
-								<button onclick="collapsiblle('.is-active .product-info-auto', 'hovered-auto')"
-									class="ac-trigger product-title product-title-auto">auto</button>
-							</h2>
-							<div class="ac-panel product-info-auto">
-								<div class="content-inner-product">
-									<h2 class="product-info-title font-secondary-color">Floração rápida</h2>
-									<span class="product-info-sub-title font-secondary-color">CULTIVO INDOOR ET URBAN
-										JUNGLE</span>
-									<div class="product-inner-info">
-										<div class="product-inner-info-carac">
-											<div>
-												<div class="product-icons-retencao background-secondary-color"></div>
-												<span class="font-secondary-color">RETENÇÃO DE AGUA</span>
-												<div class="product-icons-3-star background-secondary-color"></div>
-											</div>
-											<div>
-												<div class="product-icons-drenagem background-secondary-color"></div>
-												<span class="font-secondary-color">DRENAGEM</span>
-												<div class="product-icons-3-star background-secondary-color"></div>
-											</div>
-											<div>
-												<div class="product-icons-aeracao background-secondary-color"></div>
-												<span class="font-secondary-color">AERAÇÃO</span>
-												<div class="product-icons-4-star background-secondary-color"></div>
-											</div>
-											<div>
-												<div class="product-icons-adubacao background-secondary-color"></div>
-												<span class="font-secondary-color">ADUBAÇÃO</span>
-												<div class="product-icons-3-star background-secondary-color"></div>
-											</div>
-										</div>
-										<div class="vertical-line vertical-line-secondary-color"></div>
-										<div class="product-inner-info-comp font-secondary-color">
-											<span class="product-inner-info-comp-title">composição</span>
-											<span>30% <strong>turfa</strong></span>
-											<span>30% <strong>perlita</strong></span>
-											<span>20% <strong>coco</strong></span>
-											<span>30% <strong>humus de esterco</strong></span>
-											<span><strong>+biofertilizantes</strong></span>
-										</div>
+				<div class="ac prod_1" hidden>
+					<span class="product-new-title" onclick="go_product(1)">super</span>
+					<div class="ac-panel product-info-super">
+						<div class="content-inner-product">
+							<h2 class="product-info-title font-secondary-color">SUPER OIL</h2>
+							<span class="product-info-sub-title font-secondary-color">CULTIVO INDOOR ET HORTA
+								URBANA</span>
+							<div class="product-inner-info">
+								<div class="product-inner-info-carac">
+									<div>
+										<div class="product-icons-retencao background-secondary-color"></div>
+										<span class="font-secondary-color">RETENÇÃO DE AGUA</span>
+										<div class="product-icons-4-star background-secondary-color"></div>
 									</div>
-									<picture class="product-img">
-										<source srcset="./source/image/auto-detoure.png" media="(min-width: 800px)">
-										<img class="product-img-mobile" src="./source/image/auto-mobile.png" alt="Auto">
-									</picture>
+									<div>
+										<div class="product-icons-drenagem background-secondary-color"></div>
+										<span class="font-secondary-color">DRENAGEM</span>
+										<div class="product-icons-2-star background-secondary-color"></div>
+									</div>
+									<div>
+										<div class="product-icons-aeracao background-secondary-color"></div>
+										<span class="font-secondary-color">AERAÇÃO</span>
+										<div class="product-icons-3-star background-secondary-color"></div>
+									</div>
+									<div>
+										<div class="product-icons-adubacao background-secondary-color"></div>
+										<span class="font-secondary-color">ADUBAÇÃO</span>
+										<div class="product-icons-4-star background-secondary-color"></div>
+									</div>
+								</div>
+								<div class="vertical-line vertical-line-secondary-color"></div>
+								<div class="product-inner-info-comp font-secondary-color">
+									<span class="product-inner-info-comp-title">composição</span>
+									<span>40% <strong>turfa</strong></span>
+									<span>20% <strong>perlita</strong></span>
+									<span>10% <strong>coco</strong></span>
+									<span>30% <strong>humus de esterco</strong></span>
+									<span><strong>+biofertilizantes</strong></span>
 								</div>
 							</div>
-						</div>
-
-						<div class="ac">
-							<h2 class="ac-header">
-								<button onclick="collapsiblle('.is-active .product-info-auto', 'hovered-horta')"
-									class="ac-trigger product-title">horta</button>
-							</h2>
-							<div class="ac-panel product-info-horta">
-								<div class="content-inner-product">
-									<h2 class="product-info-title">4 estações</h2>
-									<span class="product-info-sub-title">HORTA URBANA & URBAN JUNGLE</span>
-									<div class="product-inner-info">
-										<div class="product-inner-info-carac">
-											<div>
-												<div class="product-icons-retencao"></div>
-												<span>RETENÇÃO DE AGUA</span>
-												<div class="product-icons-4-star"></div>
-											</div>
-											<div>
-												<div class="product-icons-drenagem"></div>
-												<span>DRENAGEM</span>
-												<div class="product-icons-4-star"></div>
-											</div>
-											<div>
-												<div class="product-icons-aeracao"></div>
-												<span>AERAÇÃO</span>
-												<div class="product-icons-4-star"></div>
-											</div>
-											<div>
-												<div class="product-icons-adubacao"></div>
-												<span>ADUBAÇÃO</span>
-												<div class="product-icons-4-star"></div>
-											</div>
-										</div>
-										<div class="vertical-line"></div>
-										<div class="product-inner-info-comp">
-											<span class="product-inner-info-comp-title">composição</span>
-											<span>40% <strong>turfa</strong></span>
-											<span>20% <strong>perlita</strong></span>
-											<span>10% <strong>coco</strong></span>
-											<span>30% <strong>humus de esterco</strong></span>
-											<span><strong>+biofertilizantes</strong></span>
-										</div>
-									</div>
-									<picture class="product-img">
-										<source srcset="./source/image/horta-detoure.png" media="(min-width: 800px)">
-										<img class="product-img-mobile" src="./source/image/horta-mobile.png"
-											alt="Horta">
-									</picture>
-								</div>
-							</div>
+							<picture class="product-img">
+								<source srcset="./source/image/super-detoure.png" media="(min-width: 800px)">
+								<img class="product-img-mobile" src="./source/image/super-mobile.png"
+									alt="Horta">
+							</picture>
 						</div>
 					</div>
 				</div>
+
+				<div class="ac prod_2" hidden>
+					<span class="product-new-title" onclick="go_product(2)">auto</span>
+					<div class="ac-panel product-info-auto">
+						<div class="content-inner-product">
+							<h2 class="product-info-title font-secondary-color">Floração rápida</h2>
+							<span class="product-info-sub-title font-secondary-color">CULTIVO INDOOR ET URBAN
+								JUNGLE</span>
+							<div class="product-inner-info">
+								<div class="product-inner-info-carac">
+									<div>
+										<div class="product-icons-retencao background-secondary-color"></div>
+										<span class="font-secondary-color">RETENÇÃO DE AGUA</span>
+										<div class="product-icons-3-star background-secondary-color"></div>
+									</div>
+									<div>
+										<div class="product-icons-drenagem background-secondary-color"></div>
+										<span class="font-secondary-color">DRENAGEM</span>
+										<div class="product-icons-3-star background-secondary-color"></div>
+									</div>
+									<div>
+										<div class="product-icons-aeracao background-secondary-color"></div>
+										<span class="font-secondary-color">AERAÇÃO</span>
+										<div class="product-icons-4-star background-secondary-color"></div>
+									</div>
+									<div>
+										<div class="product-icons-adubacao background-secondary-color"></div>
+										<span class="font-secondary-color">ADUBAÇÃO</span>
+										<div class="product-icons-3-star background-secondary-color"></div>
+									</div>
+								</div>
+								<div class="vertical-line vertical-line-secondary-color"></div>
+								<div class="product-inner-info-comp font-secondary-color">
+									<span class="product-inner-info-comp-title">composição</span>
+									<span>30% <strong>turfa</strong></span>
+									<span>30% <strong>perlita</strong></span>
+									<span>20% <strong>coco</strong></span>
+									<span>30% <strong>humus de esterco</strong></span>
+									<span><strong>+biofertilizantes</strong></span>
+								</div>
+							</div>
+							<picture class="product-img">
+								<source srcset="./source/image/auto-detoure.png" media="(min-width: 800px)">
+								<img class="product-img-mobile" src="./source/image/auto-mobile.png" alt="Auto">
+							</picture>
+						</div>
+					</div>
+				</div>
+
+				<div class="ac prod_3" hidden>
+					<span class="product-new-title" onclick="go_product(3)">horta</span>
+					<div class="ac-panel product-info-horta">
+						<div class="content-inner-product">
+							<h2 class="product-info-title">4 estações</h2>
+							<span class="product-info-sub-title">HORTA URBANA & URBAN JUNGLE</span>
+							<div class="product-inner-info">
+								<div class="product-inner-info-carac">
+									<div>
+										<div class="product-icons-retencao"></div>
+										<span>RETENÇÃO DE AGUA</span>
+										<div class="product-icons-4-star"></div>
+									</div>
+									<div>
+										<div class="product-icons-drenagem"></div>
+										<span>DRENAGEM</span>
+										<div class="product-icons-4-star"></div>
+									</div>
+									<div>
+										<div class="product-icons-aeracao"></div>
+										<span>AERAÇÃO</span>
+										<div class="product-icons-4-star"></div>
+									</div>
+									<div>
+										<div class="product-icons-adubacao"></div>
+										<span>ADUBAÇÃO</span>
+										<div class="product-icons-4-star"></div>
+									</div>
+								</div>
+								<div class="vertical-line"></div>
+								<div class="product-inner-info-comp">
+									<span class="product-inner-info-comp-title">composição</span>
+									<span>40% <strong>turfa</strong></span>
+									<span>20% <strong>perlita</strong></span>
+									<span>10% <strong>coco</strong></span>
+									<span>30% <strong>humus de esterco</strong></span>
+									<span><strong>+biofertilizantes</strong></span>
+								</div>
+							</div>
+							<picture class="product-img">
+								<source srcset="./source/image/horta-detoure.png" media="(min-width: 800px)">
+								<img class="product-img-mobile" src="./source/image/horta-mobile.png"
+									alt="Horta">
+							</picture>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="-product-inner-containner">
+					
+
+					<div class="-accordion-container" >
+						
+						
+
+
+					</div>
+				</div>
 			</div>
+
+			<div class="animation-product"></div>
+
 		</section>
+
+		
 
 		<section class="section" id="lets-grow section3">
 			<div class="lets-grow-inner-image">
@@ -293,7 +306,8 @@
 			</div>
 		</section>
 
-		<div class="animation-product"></div>
+
+		
 	</div>
 
 	<script type="text/javascript" src="./accordion.js"></script>
@@ -344,6 +358,17 @@
 				document.querySelector('.animation-product').classList.remove('animation-product-active');
 			}, 1000);
 		}
+
+		function go_product( id_prod ) {
+			let $anime_box = document.querySelector('.animation-product')
+			$anime_box.classList.add('animation-product-active')
+			setTimeout( () => {
+				let $prod = document.querySelector('.prod_' + id_prod )
+				$prod.toggleAttribute('hidden')
+				$anime_box.classList.remove('animation-product-active')
+			}, 1000 )
+		}
+
 	</script>
 </body>
 
