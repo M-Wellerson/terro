@@ -280,6 +280,7 @@ input[type='radio'] {
     z-index: 9999999999999999;
     background-color: #eadaca !important;
     padding-left: 2rem;
+    width: calc(100vw - 120px);
 }
 
 .ac .ac-trigger {
@@ -319,7 +320,7 @@ input[type='radio'] {
     color: var(--primary-color) !important;
     font-family: 'Beastly' !important;
     font-weight: 400 !important;
-    font-size: 70px !important;
+    font-size: 20px !important;
     display: block;
     /* background-color: #000; */
     width: 70vw;
