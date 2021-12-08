@@ -277,8 +277,8 @@
         top: 100vh;
         width: 100vw;
         height: 100vh;
-        transition: all .4s ease;
-        z-index: -1;
+        transition: all 1s ease;
+        z-index: 99999999999999999999999999999;
         background-color: var(--secondary-color);
     }
 
@@ -287,7 +287,7 @@
         display: block;
         background-color: var(--secondary-color);
         top: 0;
-        z-index: 99999999999999999999999;
+        z-index: 99999999999999999999999999999;
     }
 
     .onde-comprar-info-inner {
@@ -334,7 +334,13 @@
     }
 
     .ac {
-        width: 90vw;
+        width: 100vw;
+        position: absolute;
+        z-index: 99999999 !important;
+    }
+    
+    .lets-grow-inner-containner > div {
+        width: 70vw;
     }
 
 }
@@ -474,6 +480,16 @@
     }
     .product-new-title {
         font-size: 270px !important;
+    }
+    /* .contact-inner {
+        
+        padding-top: 12rem;
+    } */
+    .contact-inner-containner-header img {
+        margin-top: 7rem;
+    }
+    .contact-logo-vertical {
+        margin-top: 7rem;
     }
 }
 
