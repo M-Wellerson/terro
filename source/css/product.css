@@ -149,6 +149,7 @@
     font-weight: 1000;
     margin: 24px 0;
     align-self: center;
+    color: #225439;
 }
 .product-inner-info-comp-title {
     display: block;
@@ -166,6 +167,7 @@
     margin-bottom: 0;
     margin-top: 1rem;
     align-self: center;
+    color: #225439;
 }
 
 .product-inner-info {
@@ -175,6 +177,7 @@
 }
 
 .product-inner-info-comp span {
+    color: #225439;
     display: block;
     font-family: 'TTHoves-Regular';
     font-size: 20px;
